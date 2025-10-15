@@ -32,7 +32,9 @@ export default {
   },
 };
 
-const Template = (args) => <Button {...args} />;
+function Template(args) {
+  return <Button {...args} />;
+}
 
 export const Primary = Template.bind({});
 Primary.args = {

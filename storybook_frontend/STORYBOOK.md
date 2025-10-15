@@ -5,6 +5,8 @@
   npm start
   or
   npm run start:storybook
+  # Equivalent explicit command:
+  npx storybook dev -p 3000 --host 0.0.0.0 --ci
 
 - Start the original React app (moved to 3300 to avoid port conflict):
   npm run start:app

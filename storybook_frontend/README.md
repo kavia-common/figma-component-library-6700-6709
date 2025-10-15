@@ -11,6 +11,7 @@ This project provides a minimal React template with Storybook v8 configured for 
   npm start
   or
   npm run start:storybook
+  // Under the hood runs: storybook dev -p 3000 --host 0.0.0.0 --ci
 
 - Start the CRA app on port 3300 (optional):
   npm run start:app
