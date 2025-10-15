@@ -1,8 +1,9 @@
 import KpiTile from './KpiTile';
 import Icon from '../Icon/Icon';
 import AvatarStack from '../Avatar/AvatarStack';
-const samplePng = '/assets/figma_image_0_69.png';
 import MiniBarChart from '../charts/MiniBarChart';
+
+const samplePng = '/assets/figma_image_0_69.png';
 
 const meta = {
   title: 'Dashboard/KPI Tile',

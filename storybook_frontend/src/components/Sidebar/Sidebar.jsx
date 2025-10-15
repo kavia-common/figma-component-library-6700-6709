@@ -5,7 +5,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../../styles/ocean.css';
-import Icon from '../Icon/Icon';
+
 
 /**
  * PUBLIC_INTERFACE

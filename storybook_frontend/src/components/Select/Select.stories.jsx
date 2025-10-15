@@ -16,15 +16,21 @@ const meta = {
 };
 export default meta;
 
+const SelectWithState = (args) => {
+  const [val, setVal] = useState('jan');
+  const options = [
+    { value: 'jan', label: 'January' },
+    { value: 'feb', label: 'February' },
+    { value: 'mar', label: 'March' },
+  ];
+  return (
+    <div style={{ width: 240 }}>
+      <Select {...args} value={val} onChange={setVal} options={options} />
+    </div>
+  );
+};
+
 export const Default = {
-  render: (args) => {
-    const [val, setVal] = useState('jan');
-    const options = [
-      { value: 'jan', label: 'January' },
-      { value: 'feb', label: 'February' },
-      { value: 'mar', label: 'March' },
-    ];
-    return <div style={{ width: 240 }}><Select {...args} value={val} onChange={setVal} options={options} /></div>;
-  },
+  render: (args) => <SelectWithState {...args} />,
   args: {},
 };

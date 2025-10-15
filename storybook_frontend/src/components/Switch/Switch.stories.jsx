@@ -9,9 +9,11 @@ const meta = {
 };
 export default meta;
 
+const SwitchWithState = (args) => {
+  const [on, setOn] = useState(true);
+  return <Switch checked={on} onChange={setOn} ariaLabel="Dark mode" {...args} />;
+};
+
 export const Default = {
-  render: () => {
-    const [on, setOn] = useState(true);
-    return <Switch checked={on} onChange={setOn} ariaLabel="Dark mode" />;
-  },
+  render: (args) => <SwitchWithState {...args} />,
 };

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="export">
+  <rect width="30" height="30" rx="4" fill="#9CA3AF"/>
+  <path d="M15 6 L20 11 H16 V18 H14 V11 H10 L15 6 Z" fill="#111827"/>
+  <rect x="7" y="20" width="16" height="4" fill="#111827"/>
+</svg>

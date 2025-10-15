@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="home">
+  <rect width="30" height="30" rx="4" fill="#9CA3AF"/>
+  <path d="M6 16 L15 8 L24 16 V24 H18 V18 H12 V24 H6 Z" fill="#111827"/>
+</svg>

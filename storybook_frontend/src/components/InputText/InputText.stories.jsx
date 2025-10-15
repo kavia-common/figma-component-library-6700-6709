@@ -18,28 +18,37 @@ const meta = {
 };
 export default meta;
 
+// Use Uppercase React components to host hooks, to satisfy react-hooks rules.
+const InputTextControlled = (args) => {
+  const [val, setVal] = useState('');
+  return (
+    <div style={{ width: 360 }}>
+      <InputText {...args} value={val} onChange={setVal} />
+    </div>
+  );
+};
+
+const InputTextWithIcons = (args) => {
+  const [val, setVal] = useState('');
+  return (
+    <div style={{ width: 360 }}>
+      <InputText
+        {...args}
+        value={val}
+        onChange={setVal}
+        leading={<Icon name="home" size={20} />}
+        trailing={<Icon name="export" size={20} />}
+      />
+    </div>
+  );
+};
+
 export const Default = {
-  render: (args) => {
-    const [val, setVal] = useState('');
-    return <div style={{ width: 360 }}><InputText {...args} value={val} onChange={setVal} /></div>;
-  },
+  render: (args) => <InputTextControlled {...args} />,
   args: { placeholder: 'Search here..', size: 'md' },
 };
 
 export const WithIcons = {
-  render: (args) => {
-    const [val, setVal] = useState('');
-    return (
-      <div style={{ width: 360 }}>
-        <InputText
-          {...args}
-          value={val}
-          onChange={setVal}
-          leading={<Icon name="home" size={20} />}
-          trailing={<Icon name="export" size={20} />}
-        />
-      </div>
-    );
-  },
+  render: (args) => <InputTextWithIcons {...args} />,
   args: { placeholder: 'Search...' },
 };
