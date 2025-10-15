@@ -9,8 +9,9 @@
     "react-scripts": "^5.0.1"
   },
   "scripts": {
-    "start": "storybook dev -p 3000 --quiet",
-    "storybook": "storybook dev -p 3000",
+    "start": "storybook dev -p 3000 --host 0.0.0.0 --quiet",
+    "start:storybook": "storybook dev -p 3000 --host 0.0.0.0 --quiet",
+    "storybook": "storybook dev -p 3000 --host 0.0.0.0",
     "build-storybook": "storybook build",
     "start:app": "PORT=3300 react-scripts start",
     "build": "react-scripts build",
@@ -42,6 +43,7 @@
     "@storybook/react": "^8.2.9",
     "@storybook/react-webpack5": "^8.2.9",
     "@storybook/test": "^8.2.9",
-    "cross-env": "^7.0.3"
+    "cross-env": "^7.0.3",
+    "storybook": "^8.2.9"
   }
 }
