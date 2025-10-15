@@ -1,9 +1,10 @@
 /**
  * Stories for Button component with controls for variant/size/fullWidth/disabled.
+ * Uses CSF3 format with a named meta export to avoid anonymous default export lint issues.
  */
-import Button from './index';
+import Button from './Button';
 
-export default {
+const meta = {
   title: 'Components/Button',
   component: Button,
   tags: ['autodocs'],
@@ -32,35 +33,37 @@ export default {
   },
 };
 
-function Template(args) {
-  return <Button {...args} />;
-}
+export default meta;
 
-export const Primary = Template.bind({});
-Primary.args = {
-  children: 'Primary Button',
-  variant: 'primary',
-  size: 'md',
+export const Primary = {
+  args: {
+    children: 'Primary Button',
+    variant: 'primary',
+    size: 'md',
+  },
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  children: 'Secondary Button',
-  variant: 'secondary',
-  size: 'md',
+export const Secondary = {
+  args: {
+    children: 'Secondary Button',
+    variant: 'secondary',
+    size: 'md',
+  },
 };
 
-export const Ghost = Template.bind({});
-Ghost.args = {
-  children: 'Ghost Button',
-  variant: 'ghost',
-  size: 'md',
+export const Ghost = {
+  args: {
+    children: 'Ghost Button',
+    variant: 'ghost',
+    size: 'md',
+  },
 };
 
-export const Disabled = Template.bind({});
-Disabled.args = {
-  children: 'Disabled',
-  variant: 'primary',
-  size: 'md',
-  disabled: true,
+export const Disabled = {
+  args: {
+    children: 'Disabled',
+    variant: 'primary',
+    size: 'md',
+    disabled: true,
+  },
 };

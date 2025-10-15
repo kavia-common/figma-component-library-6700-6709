@@ -1,17 +1,11 @@
 /**
- * Global Storybook preview configuration.
- * - Loads global theme CSS
- * - Sets minimal parameters for actions & controls
+ * Storybook preview configuration.
+ * Minimal parameters and global CSS import; no undefined token references.
  */
+
+// Import global Storybook theme CSS if it exists
 import '../src/styles/storybook-theme.css';
 
-// PUBLIC_INTERFACE
 export const parameters = {
-  actions: { argTypesRegex: '^on[A-Z].*' },
-  controls: {
-    matchers: {
-      color: /(background|color)$/i,
-      date: /Date$/,
-    },
-  },
+  controls: { expanded: true },
 };
