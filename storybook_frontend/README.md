@@ -42,3 +42,34 @@ Minimal React template with Storybook v8 (React + Webpack5) and Docs.
 - JSX syntax errors in stories:
   - The CRA preset (@storybook/preset-create-react-app) injects Babel config.
   - If needed, add a minimal .babelrc with '@babel/preset-react' for Storybook only.
+
+---
+
+## Static Figma Screens
+
+This project includes a static export of the "Dashboard Dark" screen for quick visual reference.
+
+- Storybook story:
+  - Title: Static Screens/Dashboard Dark (0:3)
+  - How to view: Start Storybook (npm start) and open the story from the sidebar.
+
+- Served HTML:
+  - URL: http://localhost:3000/static/dashboard-dark-0-3.html
+  - Backed by files in storybook_frontend/public/static/
+
+- File locations:
+  - Public (served by Storybook):
+    - storybook_frontend/public/static/dashboard-dark-0-3.html
+    - storybook_frontend/public/static/dashboard-dark-0-3.css
+    - storybook_frontend/public/static/dashboard-dark-0-3.js
+  - Internal copies (for reference in this container):
+    - storybook_frontend/assets/dashboard-dark-0-3.html
+    - storybook_frontend/assets/dashboard-dark-0-3.css
+    - storybook_frontend/assets/dashboard-dark-0-3.js
+
+- Images:
+  - Served via Storybook staticDirs at /assets/*
+  - Copied sample: storybook_frontend/public/assets/figmaimages/figma_image_0_69.png
+  - The static JS references images using the /assets/ path to avoid 404s.
+
+Note: The static export is rendered within an iframe in Storybook to preserve the original HTML/CSS/JS layout and scaling logic.

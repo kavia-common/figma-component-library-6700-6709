@@ -25,18 +25,26 @@ Notes:
     - addons: ['@storybook/addon-essentials', '@storybook/preset-create-react-app', '@storybook/addon-docs']
     - docs: { autodocs: 'tag' }
     - stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx)']
-    - No webpackFinal MDX rule is added; SB8 built-in indexers handle MDX if used.
+    - staticDirs: ['../public'] (serves /static and /assets from storybook_frontend/public)
   - .storybook/preview.js (imports src/styles/storybook-theme.css and sets minimal parameters)
 
 Ocean Professional theme styles are applied globally via src/styles/storybook-theme.css.
 
-## Troubleshooting
+## Static Figma Screens
 
-- MDX indexing or parsing errors:
-  - Avoid custom webpack MDX loaders; they can conflict with Storybook 8 indexers.
-  - Keep '@storybook/addon-docs' installed and ensure the stories glob includes '.mdx' if you add MDX stories.
-  - Prefer CSF for simple introduction/docs-only pages to bypass MDX setup entirely.
+A static export of the "Dashboard Dark" screen is included for visual reference.
 
-- JSX/TSX transform issues in stories:
-  - @storybook/preset-create-react-app wires up CRA's Babel preset for JSX.
-  - If a custom Babel setup is needed, add a minimal .babelrc with '@babel/preset-react' for Storybook usage only.
+- Story:
+  - Title: Static Screens/Dashboard Dark (0:3)
+  - Renders the page in an iframe sourced from /static/dashboard-dark-0-3.html.
+
+- Files (served by Storybook):
+  - storybook_frontend/public/static/dashboard-dark-0-3.html  -> /static/dashboard-dark-0-3.html
+  - storybook_frontend/public/static/dashboard-dark-0-3.css   -> /static/dashboard-dark-0-3.css
+  - storybook_frontend/public/static/dashboard-dark-0-3.js    -> /static/dashboard-dark-0-3.js
+
+- Images (served at /assets/*):
+  - Copied: storybook_frontend/public/assets/figmaimages/figma_image_0_69.png
+  - The static JS references images using /assets/figmaimages/... so they resolve without 404s.
+
+Tip: Keep the Storybook port on 3000 to align with container checks (no changes required).
