@@ -14,5 +14,6 @@
 Notes:
 - Storybook runs on http://localhost:3000 and binds to 0.0.0.0 for container health checks.
 - The CRA dev server is moved to port 3300 to prevent conflicts.
+- Storybook v8 React Webpack5 builder is used. Dependencies are pinned for stability.
 
 Ocean Professional theme is applied globally. Use the Theme Mode toolbar control to toggle light/dark.

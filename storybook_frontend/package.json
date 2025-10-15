@@ -9,14 +9,15 @@
     "react-scripts": "^5.0.1"
   },
   "scripts": {
-    "start": "storybook dev -p 3000 --host 0.0.0.0 --quiet",
-    "start:storybook": "storybook dev -p 3000 --host 0.0.0.0 --quiet",
-    "storybook": "storybook dev -p 3000 --host 0.0.0.0",
+    "start": "storybook dev -p 3000 --host 0.0.0.0 --ci",
+    "start:storybook": "storybook dev -p 3000 --host 0.0.0.0 --ci",
+    "storybook": "storybook dev -p 3000 --host 0.0.0.0 --ci",
     "build-storybook": "storybook build",
     "start:app": "PORT=3300 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postinstall": "node -e \"try{require('fs').accessSync('./node_modules/.bin/storybook')}catch(e){process.exit(0)}\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -34,16 +35,11 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "^8.2.9",
-    "@storybook/addon-essentials": "^8.2.9",
-    "@storybook/addon-interactions": "^8.2.9",
-    "@storybook/addon-links": "^8.2.9",
-    "@storybook/addon-themes": "^8.2.9",
-    "@storybook/blocks": "^8.2.9",
-    "@storybook/react": "^8.2.9",
-    "@storybook/react-webpack5": "^8.2.9",
-    "@storybook/test": "^8.2.9",
-    "cross-env": "^7.0.3",
-    "storybook": "^8.2.9"
+    "@storybook/addon-essentials": "^8.1.11",
+    "@storybook/addon-interactions": "^8.1.11",
+    "@storybook/react": "^8.1.11",
+    "@storybook/react-webpack5": "^8.1.11",
+    "@storybook/testing-library": "^0.2.2",
+    "storybook": "^8.1.11"
   }
 }

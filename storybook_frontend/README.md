@@ -1,53 +1,29 @@
 # Lightweight React Template for KAVIA
 
-This project provides a minimal React template with a clean, modern UI and minimal dependencies.
+This project provides a minimal React template with Storybook v8 configured for React + Webpack5.
 
-## Features
+## Quick start
 
-- **Lightweight**: No heavy UI frameworks - uses only vanilla CSS and React
-- **Modern UI**: Clean, responsive design with KAVIA brand styling
-- **Fast**: Minimal dependencies for quick loading times
-- **Simple**: Easy to understand and modify
+- Install dependencies:
+  npm install
 
-## Getting Started
+- Start Storybook (binds 0.0.0.0:3000):
+  npm start
+  or
+  npm run start:storybook
 
-In the project directory, you can run:
+- Start the CRA app on port 3300 (optional):
+  npm run start:app
 
-### `npm start`
+- Build Storybook:
+  npm run build-storybook
 
-Runs Storybook in development mode on port 3000, binding to 0.0.0.0 (for container health checks).  
-Open http://localhost:3000 to view it in your browser.
+- Run tests:
+  npm test
 
-### `npm run start:storybook`
+## Notes
 
-Alias to start Storybook on port 3000.
-
-### `npm run start:app`
-
-Runs the original CRA dev server on port 3300 to avoid conflicts with Storybook.
-
-### `npm test`
-
-Launches the test runner in interactive watch mode.
-
-### `npm run build-storybook`
-
-Builds Storybook for production.
-
-### `npm run build`
-
-Builds the CRA app for production to the `build` folder.
-
-## Customization
-
-### Colors
-
-The main brand colors are defined as CSS variables in `src/App.css`.
-
-### Components
-
-This template uses pure HTML/CSS components instead of a UI framework. You can find component styles in `src/App.css`. 
-
-## Learn More
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- The Storybook CLI is installed as a devDependency and available at node_modules/.bin/storybook.
+- Storybook runs on http://localhost:3000 and binds to 0.0.0.0 for container health checks.
+- The CRA dev server is moved to port 3300 to avoid conflicts with Storybook.
+- If you encounter peer dependency resolution issues, .npmrc sets legacy-peer-deps=true for install reliability.
