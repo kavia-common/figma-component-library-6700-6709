@@ -1,11 +1,9 @@
-const path = require('path');
-
 /**
- * Storybook configuration for React + Webpack5 with CRA preset and MDX v3 support.
+ * Storybook configuration for React + Webpack5 using built-in SB8 indexers.
  * - Framework: @storybook/react-webpack5
- * - Addons: essentials, preset-create-react-app, addon-docs
- * - MDX v3 loader: @mdx-js/loader configured explicitly
- * - Docs: autodocs via CSF3 tags
+ * - Addons: essentials, CRA preset, docs
+ * - Docs: autodocs via CSF tags
+ * - Stories: supports js, jsx, ts, tsx, mdx (no custom MDX loader override)
  */
 module.exports = {
   framework: {
@@ -13,9 +11,7 @@ module.exports = {
     options: {},
   },
 
-  stories: [
-    '../src/**/*.stories.@(js|jsx|ts|tsx|mdx)',
-  ],
+  stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
 
   addons: [
     '@storybook/addon-essentials',
@@ -25,34 +21,5 @@ module.exports = {
 
   docs: {
     autodocs: 'tag',
-  },
-
-  webpackFinal: async (config) => {
-    // Explicit MDX v3 loader rule to handle .mdx documentation files
-    config.module = config.module || {};
-    config.module.rules = config.module.rules || [];
-    config.module.rules.push({
-      test: /\.mdx?$/,
-      use: [
-        {
-          loader: require.resolve('@mdx-js/loader'),
-          options: {
-            // MDX v3 options
-            mdxExtensions: ['.mdx'],
-            providerImportSource: '@mdx-js/react',
-            // You can set remark/rehype plugins here if needed
-            // mdxOptions: { remarkPlugins: [], rehypePlugins: [] },
-          },
-        },
-      ],
-    });
-
-    // Ensure JSX/TSX are resolvable; CRA preset provides Babel config
-    config.resolve = config.resolve || {};
-    config.resolve.extensions = Array.from(
-      new Set([...(config.resolve.extensions || []), '.js', '.jsx', '.ts', '.tsx'])
-    );
-
-    return config;
   },
 };

@@ -17,24 +17,25 @@
 Notes:
 - Storybook runs on http://localhost:3000 and binds to 0.0.0.0 for container health checks.
 - CRA dev server is moved to port 3300 to prevent conflicts.
-- MDX3 Docs are enabled via @storybook/addon-docs; see src/Intro.stories.mdx as an example.
+- Docs are enabled via '@storybook/addon-docs'.
+- Intro page uses CSF (no MDX): see src/Intro.stories.jsx.
 - Configuration files:
   - .storybook/main.js
     - framework: '@storybook/react-webpack5'
     - addons: ['@storybook/addon-essentials', '@storybook/preset-create-react-app', '@storybook/addon-docs']
     - docs: { autodocs: 'tag' }
     - stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx)']
-    - webpackFinal: adds an explicit @mdx-js/loader rule for MDX v3
+    - No webpackFinal MDX rule is added; SB8 built-in indexers handle MDX if used.
   - .storybook/preview.js (imports src/styles/storybook-theme.css and sets minimal parameters)
 
 Ocean Professional theme styles are applied globally via src/styles/storybook-theme.css.
 
 ## Troubleshooting
 
-- MDX parsing errors (Unexpected token in .mdx):
-  - Install @mdx-js/loader@^3 and @mdx-js/react@^3 as devDependencies.
-  - Ensure .storybook/main.js has a webpackFinal rule with '@mdx-js/loader' and mdxExtensions: ['.mdx'].
-  - Verify stories glob includes .mdx.
+- MDX indexing or parsing errors:
+  - Avoid custom webpack MDX loaders; they can conflict with Storybook 8 indexers.
+  - Keep '@storybook/addon-docs' installed and ensure the stories glob includes '.mdx' if you add MDX stories.
+  - Prefer CSF for simple introduction/docs-only pages to bypass MDX setup entirely.
 
 - JSX/TSX transform issues in stories:
   - @storybook/preset-create-react-app wires up CRA's Babel preset for JSX.

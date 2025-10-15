@@ -1,6 +1,6 @@
 # Lightweight React + Storybook Template (Ocean Professional)
 
-Minimal React template with Storybook v8 (React + Webpack5) and MDX3 Docs.
+Minimal React template with Storybook v8 (React + Webpack5) and Docs.
 
 ## Quick start
 
@@ -29,16 +29,16 @@ Minimal React template with Storybook v8 (React + Webpack5) and MDX3 Docs.
   - addons: ['@storybook/addon-essentials', '@storybook/preset-create-react-app', '@storybook/addon-docs']
   - docs: { autodocs: 'tag' }
   - stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx)']
-  - webpackFinal includes explicit MDX v3 rule via @mdx-js/loader
-- Global Storybook theme styles are imported via .storybook/preview.js from src/styles/storybook-theme.css.
+- No custom MDX webpack overrides are used. Storybook 8 provides built-in indexers and MDX handling through addon-docs.
+- An Intro page is provided as CSF: src/Intro.stories.jsx.
 
 ## Troubleshooting
 
-- MDX parse errors (e.g., "Module parse failed" on .mdx):
-  - Ensure @mdx-js/loader@^3 and @mdx-js/react@^3 are installed (devDependencies).
-  - Verify .storybook/main.js has an explicit webpackFinal rule using '@mdx-js/loader'.
-  - Confirm stories globs include .mdx: '../src/**/*.stories.@(js|jsx|ts|tsx|mdx)'.
+- MDX indexer errors (e.g., "No matching indexer found" on .mdx):
+  - Do not add custom '@mdx-js/loader' rules in webpackFinal — they can override Storybook's built-in indexers.
+  - Use CSF stories (e.g., .stories.jsx) for docs/intro pages, or rely on the built-in MDX support from '@storybook/addon-docs' without custom loaders.
+  - Ensure addons include '@storybook/addon-docs' and the stories glob includes 'mdx' if you keep MDX stories.
 
 - JSX syntax errors in stories:
   - The CRA preset (@storybook/preset-create-react-app) injects Babel config.
-  - If needed, add a minimal .babelrc with the CRA preset or @babel/preset-react for Storybook only.
+  - If needed, add a minimal .babelrc with '@babel/preset-react' for Storybook only.
