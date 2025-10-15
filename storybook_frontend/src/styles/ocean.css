@@ -1,0 +1,253 @@
+.ocean-card {
+  background: var(--ocean-surface-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-24);
+}
+
+.ocean-card--elevated {
+  background: var(--ocean-bg-850);
+  box-shadow: var(--shadow-md);
+}
+
+.ocean-card--muted {
+  background: var(--ocean-surface-muted);
+}
+
+.ocean-card--accent-purple { border-top: 3px solid var(--accent-purple-600); }
+.ocean-card--accent-yellow { border-top: 3px solid var(--accent-yellow-500); }
+.ocean-card--accent-green  { border-top: 3px solid var(--accent-green-500); }
+.ocean-card--accent-blue   { border-top: 3px solid var(--accent-blue-500); }
+
+.ocean-input {
+  width: 100%;
+  min-height: 46px;
+  background: var(--input-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--input-border);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  outline: none;
+  transition: border-color 120ms ease, box-shadow 120ms ease, background 120ms ease, color 120ms ease;
+}
+.ocean-input::placeholder {
+  color: var(--text-placeholder);
+}
+.ocean-input:hover {
+  border-color: var(--border-strong);
+}
+.ocean-input:focus-visible {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px var(--accent-cyan-500);
+}
+
+.ocean-select {
+  appearance: none;
+  background: var(--input-bg);
+  color: var(--text-primary);
+  border: 1px solid var(--input-border);
+  border-radius: var(--radius-sm);
+  padding: 10px 36px 10px 12px;
+  min-height: 46px;
+  background-image: linear-gradient(45deg, transparent 50%, var(--text-secondary) 50%), linear-gradient(135deg, var(--text-secondary) 50%, transparent 50%), linear-gradient(to right, transparent, transparent);
+  background-position: calc(100% - 16px) calc(50% - 3px), calc(100% - 8px) calc(50% - 3px), calc(100% - 2.5em) 0.5em;
+  background-size: 8px 8px, 8px 8px, 1px 1.5em;
+  background-repeat: no-repeat;
+}
+.ocean-select:hover {
+  border-color: var(--border-strong);
+}
+.ocean-select:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--accent-cyan-500);
+  border-color: transparent;
+}
+
+.ocean-badge, .ocean-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  padding: 8px 12px;
+  border: 1px solid transparent;
+}
+.ocean-badge--neutral { background: var(--chip-bg); color: var(--text-secondary); border-color: var(--border-subtle); }
+.ocean-badge--success { background: color-mix(in srgb, var(--accent-green-500) 20%, transparent); color: var(--text-primary); border-color: rgba(255,255,255,0.08); }
+.ocean-badge--warning { background: color-mix(in srgb, var(--accent-yellow-500) 20%, transparent); color: var(--text-primary); border-color: rgba(255,255,255,0.08); }
+.ocean-badge--error   { background: color-mix(in srgb, var(--accent-red-500) 24%, transparent); color: var(--text-primary); border-color: rgba(255,255,255,0.10); }
+.ocean-badge--info    { background: color-mix(in srgb, var(--accent-blue-500) 20%, transparent); color: var(--text-primary); border-color: rgba(255,255,255,0.08); }
+
+.ocean-status--inprogress { background: color-mix(in srgb, var(--accent-blue-500) 22%, transparent); color: var(--text-primary); border-color: rgba(255,255,255,0.12); }
+.ocean-status--pending    { background: color-mix(in srgb, var(--accent-yellow-500) 28%, transparent); color: var(--text-primary); border-color: rgba(255,255,255,0.12); }
+.ocean-status--completed  { background: color-mix(in srgb, var(--accent-green-500) 28%, transparent); color: var(--text-primary); border-color: rgba(255,255,255,0.12); }
+
+.ocean-switch {
+  position: relative;
+  width: 48px;
+  height: 28px;
+}
+.ocean-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.ocean-switch .track {
+  position: absolute;
+  inset: 0;
+  background: var(--chip-bg);
+  border: 1px solid var(--input-border);
+  border-radius: 999px;
+  transition: background 120ms ease, border-color 120ms ease;
+}
+.ocean-switch .thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  background: var(--text-primary);
+  border-radius: 50%;
+  transition: transform 180ms ease, background 120ms ease;
+}
+.ocean-switch input:checked + .track {
+  background: color-mix(in srgb, var(--accent-blue-500) 40%, transparent);
+  border-color: transparent;
+}
+.ocean-switch input:checked + .track + .thumb {
+  transform: translateX(20px);
+  background: #fff;
+}
+.ocean-switch input:focus-visible + .track {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--accent-cyan-500);
+}
+
+.ocean-tabs {
+  display: inline-flex;
+  gap: 8px;
+  padding: 4px;
+  background: var(--ocean-surface-muted);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+}
+.ocean-tab {
+  padding: 6px 12px;
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  cursor: pointer;
+  user-select: none;
+}
+.ocean-tab[aria-selected="true"] {
+  background: var(--chip-selected-bg);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.ocean-avatar {
+  border-radius: 999px;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ocean-surface-muted);
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+}
+
+.ocean-sidebar {
+  background: var(--ocean-sidebar-bg);
+  color: var(--text-secondary);
+  width: 277px;
+  min-height: 100%;
+  border-right: 1px solid var(--border-subtle);
+  padding: var(--space-24) var(--space-16);
+}
+.ocean-sidebar .brand {
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-24);
+}
+.ocean-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 8px;
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  position: relative;
+}
+.ocean-nav-item:hover {
+  background: rgba(255,255,255,0.06);
+}
+.ocean-nav-item--active {
+  color: var(--text-primary);
+}
+.ocean-nav-item--active::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 8px;
+  bottom: 8px;
+  width: 3px;
+  border-radius: 3px;
+  background: var(--accent-blue-500);
+}
+
+.ocean-topbar {
+  background: var(--ocean-topbar-bg);
+  height: 110px;
+  display: flex;
+  align-items: center;
+  padding: 0 var(--space-24);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.ocean-progress {
+  width: 163px;
+  height: 17px;
+  background: var(--chip-bg);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xs);
+  overflow: hidden;
+}
+.ocean-progress__fill {
+  height: 100%;
+  background: var(--accent-blue-500);
+  border-right: 1px solid rgba(255,255,255,0.15);
+}
+
+.ocean-toast {
+  display: inline-flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: var(--ocean-surface-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-16);
+  max-width: 480px;
+}
+.ocean-toast--success { border-left: 4px solid var(--accent-green-500); }
+.ocean-toast--info    { border-left: 4px solid var(--accent-blue-500); }
+.ocean-toast--warning { border-left: 4px solid var(--accent-yellow-500); }
+.ocean-toast--error   { border-left: 4px solid var(--accent-red-500); }
+
+.focusable:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--accent-cyan-500);
+}
+
+/* Utility for story surfaces */
+.sb-surface {
+  background: var(--ocean-surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-24);
+  color: var(--text-primary);
+}
