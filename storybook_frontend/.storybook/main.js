@@ -1,17 +1,30 @@
+const path = require('path');
+
 /**
- * Storybook main configuration for React + Webpack5 with CRA preset and MDX3 docs.
+ * Storybook main configuration for React + Webpack5 with CRA preset.
+ * - Enables MDX3 docs via @storybook/addon-docs
+ * - Autodocs enabled via tag in stories meta
  */
-export default {
-  framework: '@storybook/react-webpack5',
-  stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
+module.exports = {
+  stories: [
+    '../src/**/*.mdx',
+    '../src/**/*.stories.@(js|jsx|ts|tsx)',
+  ],
   addons: [
-    // Ensure CRA preset is first so Babel/webpack settings work out of the box
     '@storybook/preset-create-react-app',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
-    '@storybook/addon-docs'
+    '@storybook/addon-docs',
   ],
+  framework: {
+    name: '@storybook/react-webpack5',
+    options: {},
+  },
   docs: {
-    autodocs: 'tag'
-  }
+    autodocs: 'tag',
+  },
+  // Keep default webpack handling provided by Storybook and CRA preset.
+  webpackFinal: async (config) => {
+    return config;
+  },
 };

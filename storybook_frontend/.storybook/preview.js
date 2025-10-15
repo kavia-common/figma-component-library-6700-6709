@@ -1,11 +1,15 @@
 /**
- * Storybook preview configuration.
- * Minimal parameters and global CSS import; no undefined token references.
+ * Global Storybook preview configuration.
+ * Applies the Ocean Professional theme CSS and sets basic parameters.
  */
-
-// Import global Storybook theme CSS if it exists
 import '../src/styles/storybook-theme.css';
 
 export const parameters = {
-  controls: { expanded: true },
+  actions: { argTypesRegex: '^on[A-Z].*' },
+  controls: {
+    matchers: {
+      color: /(background|color)$/i,
+      date: /Date$/,
+    },
+  },
 };
