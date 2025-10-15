@@ -1,0 +1,4 @@
+{
+    "command": "npm install",
+    "working_directory": "/home/kavia/workspace/code-generation/figma-component-library-6700-6709/storybook_frontend"
+}
