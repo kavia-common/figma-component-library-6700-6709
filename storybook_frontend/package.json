@@ -44,6 +44,7 @@
     "@storybook/test": "^8.6.14",
     "@mdx-js/react": "^3.0.0",
     "@mdx-js/mdx": "^3.0.0",
+    "@mdx-js/loader": "^3.0.0",
     "storybook": "^8.1.11"
   }
 }
