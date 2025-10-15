@@ -1,8 +1,6 @@
 /**
- * Global Storybook preview configuration:
- * - Applies Ocean Professional theme tokens via CSS variables
- * - Sets backgrounds and controls defaults
- * - Registers a global dark/light theme toggle using Storybook Themes addon
+ * Global preview configuration for Storybook.
+ * Sets up parameters and theme switching using a data attribute.
  */
 import '../src/styles/storybook-theme.css';
 
@@ -13,28 +11,13 @@ export const parameters = {
       color: /(background|color)$/i,
       date: /Date$/,
     },
-    expanded: true,
-  },
-  backgrounds: {
-    default: 'surface',
-    values: [
-      { name: 'surface', value: 'var(--sb-surface)' },
-      { name: 'background', value: 'var(--sb-background)' },
-      { name: 'white', value: '#ffffff' },
-      { name: 'dark', value: '#111827' },
-    ],
-  },
-  options: {
-    storySort: {
-      order: ['Intro', 'Components', ['Button', 'Inputs', 'Data Display']],
-    },
   },
 };
 
 export const globalTypes = {
   themeMode: {
     name: 'Theme Mode',
-    description: 'Global theme mode for components',
+    description: 'Global theme for components',
     defaultValue: 'light',
     toolbar: {
       icon: 'mirror',
@@ -42,16 +25,17 @@ export const globalTypes = {
         { value: 'light', title: 'Light' },
         { value: 'dark', title: 'Dark' },
       ],
-      showName: true,
       dynamicTitle: true,
     },
   },
 };
 
-const withThemeVars = (Story, context) => {
-  const mode = context.globals.themeMode || 'light';
-  document.documentElement.setAttribute('data-sb-theme', mode);
-  return Story();
-};
-
-export const decorators = [withThemeVars];
+export const decorators = [
+  (Story, context) => {
+    const mode = context.globals.themeMode || 'light';
+    if (typeof document !== 'undefined') {
+      document.documentElement.setAttribute('data-sb-theme', mode);
+    }
+    return Story();
+  },
+];

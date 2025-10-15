@@ -1,30 +1,34 @@
 /**
- * Storybook main configuration for React (Webpack5).
- * Configures Storybook to run on port 3000 and auto-detect stories.
+ * Storybook main configuration for React + Webpack5 on Storybook 8.
  */
-module.exports = {
+import { dirname, join } from 'path';
+
+const config = {
   framework: {
     name: '@storybook/react-webpack5',
     options: {},
   },
-  core: {
-    disableTelemetry: true,
-  },
   stories: [
-    '../src/**/*.stories.@(js|jsx|ts|tsx|mdx)',
+    '../src/**/*.stories.@(js|jsx|ts|tsx|mdx)'
   ],
   addons: [
     '@storybook/addon-essentials',
     '@storybook/addon-links',
     '@storybook/addon-interactions',
     '@storybook/addon-a11y',
-    '@storybook/addon-themes',
+    '@storybook/addon-themes'
   ],
   docs: {
-    autodocs: true,
+    autodocs: 'tag',
   },
-  features: {
-    interactionsDebugger: true,
+  webpackFinal: async (config) => {
+    // Ensure CSS files from src can be loaded
+    config.module.rules.push({
+      test: /\.css$/i,
+      use: ['style-loader', 'css-loader'],
+      include: [join(__dirname, '../src')],
+    });
+    return config;
   },
-  staticDirs: [],
 };
+export default config;
