@@ -1,41 +1,49 @@
-/**
- * Icon wrapper that maps design asset names to SVG imports for easy reuse.
- */
-// PUBLIC_INTERFACE
-import React from 'react';
-import PropTypes from 'prop-types';
+ /** 
+  * Icon wrapper mapping design asset names to static asset URLs served from /assets.
+  * This avoids bundler errors if SVG files are not present under src, and works with
+  * Storybook staticDirs serving ../public. If a name has no asset, render a placeholder span.
+  */
+ // PUBLIC_INTERFACE
+ import React from 'react';
+ import PropTypes from 'prop-types';
 
-// Import SVGs as React Components when supported by CRA preset
-// Fallback to <img> if ReactComponent import is not available in this environment
-import { ReactComponent as HomeIcon } from '../../assets/figma_image_0_304.svg';
-import { ReactComponent as ExportIcon } from '../../assets/figma_image_0_247.svg';
-import { ReactComponent as DollarIcon } from '../../assets/figma_image_0_100.svg';
-import { ReactComponent as CorrectIcon } from '../../assets/figma_image_0_139.svg';
-import { ReactComponent as CheckIcon } from '../../assets/figma_image_0_141.svg';
+ // Mapping of icon names to their static URLs in public/assets.
+ // Note: These assets are expected in storybook_frontend/public/assets/
+ const sources = {
+   home: '/assets/figma_image_0_304.svg',
+   export: '/assets/figma_image_0_247.svg',
+   dollar: '/assets/figma_image_0_100.svg',
+   correct: '/assets/figma_image_0_139.svg',
+   check: '/assets/figma_image_0_141.svg',
+ };
 
-const registry = {
-  home: HomeIcon,
-  export: ExportIcon,
-  dollar: DollarIcon,
-  correct: CorrectIcon,
-  check: CheckIcon,
-};
+ // PUBLIC_INTERFACE
+ export function Icon({ name, size = 24, color = 'currentColor', title, style, ...rest }) {
+   const src = sources[name];
+   if (src) {
+     // We cannot apply 'fill' directly on <img>; color parameter is ignored for raster/SVG files.
+     // Consumers should supply appropriately colored assets when needed.
+     return (
+       <img
+         src={src}
+         width={size}
+         height={size}
+         alt={title || name}
+         style={{ display: 'inline-block', width: size, height: size, ...style }}
+         {...rest}
+       />
+     );
+   }
+   // Fallback: render an empty box placeholder with the desired size.
+   return <span aria-hidden="true" style={{ display: 'inline-block', width: size, height: size }} {...rest} />;
+ }
 
-// PUBLIC_INTERFACE
-export function Icon({ name, size = 24, color = 'currentColor', title, ...rest }) {
-  const Cmp = registry[name];
-  if (Cmp) {
-    return <Cmp width={size} height={size} fill={color} aria-label={title || name} {...rest} />;
-  }
-  // Fallback: render nothing if name is unknown
-  return <span aria-hidden="true" style={{ display: 'inline-block', width: size, height: size }} {...rest} />;
-}
+ Icon.propTypes = {
+   name: PropTypes.oneOf(Object.keys(sources)).isRequired,
+   size: PropTypes.number,
+   color: PropTypes.string,
+   title: PropTypes.string,
+   style: PropTypes.object,
+ };
 
-Icon.propTypes = {
-  name: PropTypes.oneOf(Object.keys(registry)).isRequired,
-  size: PropTypes.number,
-  color: PropTypes.string,
-  title: PropTypes.string,
-};
-
-export default Icon;
+ export default Icon;

@@ -1,7 +1,7 @@
 import KpiTile from './KpiTile';
 import Icon from '../Icon/Icon';
 import AvatarStack from '../Avatar/AvatarStack';
-import samplePng from '../../assets/figma_image_0_69.png';
+const samplePng = '/assets/figma_image_0_69.png';
 import MiniBarChart from '../charts/MiniBarChart';
 
 const meta = {

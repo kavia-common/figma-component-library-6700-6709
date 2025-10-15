@@ -13,6 +13,9 @@ module.exports = {
 
   stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
 
+  // Serve static assets from the CRA public directory (for /assets/* image paths)
+  staticDirs: ['../public'],
+
   addons: [
     '@storybook/addon-essentials',
     '@storybook/preset-create-react-app',

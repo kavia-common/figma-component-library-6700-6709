@@ -1,6 +1,6 @@
 import Avatar from './Avatar';
 import AvatarStack from './AvatarStack';
-import samplePng from '../../assets/figma_image_0_69.png';
+const samplePng = '/assets/figma_image_0_69.png';
 
 const meta = {
   title: 'Components/Avatar',
