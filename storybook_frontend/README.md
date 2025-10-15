@@ -26,4 +26,4 @@ This project provides a minimal React template with Storybook v8 configured for 
 - The Storybook CLI is installed as a devDependency and available at node_modules/.bin/storybook.
 - Storybook runs on http://localhost:3000 and binds to 0.0.0.0 for container health checks.
 - The CRA dev server is moved to port 3300 to avoid conflicts with Storybook.
-- If you encounter peer dependency resolution issues, .npmrc sets legacy-peer-deps=true for install reliability.
+- Storybook v8 React Webpack5 builder is configured in .storybook/main.js with addons: @storybook/addon-essentials and @storybook/addon-interactions.

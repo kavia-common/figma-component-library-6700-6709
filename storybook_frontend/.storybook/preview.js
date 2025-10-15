@@ -1,9 +1,11 @@
 /**
- * Global preview configuration for Storybook.
- * Sets up parameters and theme switching using a data attribute.
+ * Global Storybook preview configuration.
+ * - Loads global theme CSS
+ * - Sets minimal parameters for actions & controls
  */
 import '../src/styles/storybook-theme.css';
 
+// PUBLIC_INTERFACE
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
@@ -13,29 +15,3 @@ export const parameters = {
     },
   },
 };
-
-export const globalTypes = {
-  themeMode: {
-    name: 'Theme Mode',
-    description: 'Global theme for components',
-    defaultValue: 'light',
-    toolbar: {
-      icon: 'mirror',
-      items: [
-        { value: 'light', title: 'Light' },
-        { value: 'dark', title: 'Dark' },
-      ],
-      dynamicTitle: true,
-    },
-  },
-};
-
-export const decorators = [
-  (Story, context) => {
-    const mode = context.globals.themeMode || 'light';
-    if (typeof document !== 'undefined') {
-      document.documentElement.setAttribute('data-sb-theme', mode);
-    }
-    return Story();
-  },
-];
