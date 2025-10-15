@@ -1,0 +1,75 @@
+/* Ocean Professional Theme Tokens for Storybook */
+:root {
+  --sb-primary: #2563EB;   /* Primary Blue */
+  --sb-secondary: #F59E0B; /* Amber Accent */
+  --sb-success: #10B981;   /* Optional success */
+  --sb-error: #EF4444;     /* Error Red */
+  --sb-background: #f9fafb;/* App Background */
+  --sb-surface: #ffffff;   /* Surface/Panel */
+  --sb-text: #111827;      /* Primary Text */
+  --sb-muted: #6B7280;     /* Muted Text */
+  --sb-border: #e5e7eb;    /* Borders */
+  --sb-radius: 10px;
+  --sb-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  --sb-focus: 0 0 0 3px rgba(37, 99, 235, 0.35);
+}
+
+/* Dark mode variant toggled via preview globalType */
+:root[data-sb-theme="dark"] {
+  --sb-background: #0b1220;
+  --sb-surface: #0f172a;
+  --sb-text: #e5e7eb;
+  --sb-muted: #94a3b8;
+  --sb-border: #1f2937;
+  --sb-shadow: 0 8px 24px rgba(0,0,0,0.35);
+}
+
+/* Utility classes optionally usable inside stories */
+.sb-surface {
+  background: var(--sb-surface);
+  color: var(--sb-text);
+  border: 1px solid var(--sb-border);
+  border-radius: var(--sb-radius);
+  box-shadow: var(--sb-shadow);
+  padding: 16px;
+}
+
+.sb-btn {
+  appearance: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease, color 120ms ease, border-color 120ms ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.sb-btn:focus-visible {
+  outline: none;
+  box-shadow: var(--sb-focus);
+}
+
+.sb-btn--primary {
+  background: var(--sb-primary);
+  color: #fff;
+}
+
+.sb-btn--secondary {
+  background: var(--sb-secondary);
+  color: #111827;
+}
+
+.sb-btn--ghost {
+  background: transparent;
+  color: var(--sb-primary);
+  border-color: var(--sb-primary);
+}
+
+.sb-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
