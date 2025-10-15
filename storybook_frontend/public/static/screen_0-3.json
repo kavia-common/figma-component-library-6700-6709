@@ -1,0 +1,4462 @@
+{
+  "screen_id": "screen_0:3",
+  "name": "Dashboard Dark",
+  "figma_id": "0:3",
+  "dimensions": {
+    "width": 2490.0,
+    "height": 1922.0
+  },
+  "background": {
+    "type": "solid",
+    "color_ref": "color_171a30"
+  },
+  "root": {
+    "id": "0:3",
+    "name": "Dashboard Dark",
+    "type": "container",
+    "figma_type": "FRAME",
+    "dimensions": {
+      "x": -3889.0,
+      "y": -2313.0,
+      "width": 2490.0,
+      "height": 1922.0
+    },
+    "style_ref": "style_0",
+    "children": [
+      {
+        "id": "0:4",
+        "name": "material-symbols:task-outline",
+        "type": "container",
+        "figma_type": "FRAME",
+        "dimensions": {
+          "x": -2656.0,
+          "y": -1364.0,
+          "width": 34.0,
+          "height": 48.0
+        },
+        "style_ref": "style_1",
+        "children": [
+          {
+            "id": "0:5",
+            "name": "Vector",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/3a655301-a14f-4a58-af10-eb25d94560ad",
+            "dimensions": {
+              "x": -2650.333251953125,
+              "y": -1360.0,
+              "width": 22.666669845581055,
+              "height": 40.00000762939453
+            },
+            "style_ref": "style_2",
+            "imagePath": "/assets/figmaimages/figma_image_0_5.svg"
+          }
+        ]
+      },
+      {
+        "id": "0:6",
+        "name": "Rectangle 32",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -3894.0,
+          "y": -2313.0,
+          "width": 2490.0,
+          "height": 1922.0
+        },
+        "style_ref": "style_0"
+      },
+      {
+        "id": "0:7",
+        "name": "Rectangle 15",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -3896.0,
+          "y": -2313.0,
+          "width": 277.0,
+          "height": 1920.0
+        },
+        "style_ref": "style_3"
+      },
+      {
+        "id": "0:8",
+        "name": "Rectangle 17",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -3619.0,
+          "y": -2313.0,
+          "width": 2220.0,
+          "height": 110.0
+        },
+        "style_ref": "style_4"
+      },
+      {
+        "id": "0:9",
+        "name": "Rectangle 16",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/663f85b0-63c8-4f84-b862-a1079d8b3a2a",
+        "dimensions": {
+          "x": -3641.0,
+          "y": -2279.0,
+          "width": 44.0,
+          "height": 44.0
+        },
+        "style_ref": "style_5",
+        "imagePath": "/assets/figmaimages/figma_image_0_9.svg"
+      },
+      {
+        "id": "0:10",
+        "name": "Rectangle 18",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -1902.0,
+          "y": -2281.0,
+          "width": 386.0,
+          "height": 46.0
+        },
+        "style_ref": "style_6"
+      },
+      {
+        "id": "0:11",
+        "name": "Rectangle 19",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -3555.0,
+          "y": -2281.0,
+          "width": 386.0,
+          "height": 46.0
+        },
+        "style_ref": "style_7"
+      },
+      {
+        "id": "0:12",
+        "name": "Search here..",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -1886.0,
+          "y": -2276.0,
+          "width": 160.0,
+          "height": 36.0
+        },
+        "style_ref": "style_8",
+        "text": "Search here..",
+        "typography_ref": "typo_37"
+      },
+      {
+        "id": "0:13",
+        "name": "purple board",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -3574.0,
+          "y": -2148.0,
+          "width": 462.0,
+          "height": 332.0
+        },
+        "style_ref": "style_9"
+      },
+      {
+        "id": "0:14",
+        "name": "Black board 1",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -3574.0,
+          "y": -1763.0,
+          "width": 462.0,
+          "height": 159.0
+        },
+        "style_ref": "style_10"
+      },
+      {
+        "id": "0:15",
+        "name": "black board  2",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -3058.0,
+          "y": -1773.0,
+          "width": 459.0,
+          "height": 169.0
+        },
+        "style_ref": "style_10"
+      },
+      {
+        "id": "0:16",
+        "name": "material-symbols:task-outline",
+        "type": "container",
+        "figma_type": "FRAME",
+        "dimensions": {
+          "x": -3176.0,
+          "y": -1741.0,
+          "width": 48.0,
+          "height": 48.0
+        },
+        "style_ref": "style_1",
+        "children": [
+          {
+            "id": "0:17",
+            "name": "Vector",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/3afbbd43-afd6-4dfe-aa9d-f9ca3c8a08f7",
+            "dimensions": {
+              "x": -3168.0,
+              "y": -1737.0,
+              "width": 32.000003814697266,
+              "height": 40.00000762939453
+            },
+            "style_ref": "style_2",
+            "imagePath": "/assets/figmaimages/figma_image_0_17.svg"
+          }
+        ]
+      },
+      {
+        "id": "0:18",
+        "name": "yellow board",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -3058.0,
+          "y": -2144.0,
+          "width": 458.0,
+          "height": 332.0
+        },
+        "style_ref": "style_11"
+      },
+      {
+        "id": "0:19",
+        "name": "Group 4",
+        "type": "container",
+        "figma_type": "GROUP",
+        "dimensions": {
+          "x": -2529.0,
+          "y": -2144.0,
+          "width": 506.00006103515625,
+          "height": 540.0
+        },
+        "children": [
+          {
+            "id": "0:20",
+            "name": "green board",
+            "type": "rectangle",
+            "figma_type": "RECTANGLE",
+            "dimensions": {
+              "x": -2529.0,
+              "y": -2143.41162109375,
+              "width": 497.5947570800781,
+              "height": 539.082275390625
+            },
+            "style_ref": "style_12"
+          },
+          {
+            "id": "0:21",
+            "name": "Vector",
+            "type": "container",
+            "figma_type": "GROUP",
+            "dimensions": {
+              "x": -2527.55517578125,
+              "y": -2144.0,
+              "width": 504.5551452636719,
+              "height": 540.0
+            },
+            "children": [
+              {
+                "id": "0:22",
+                "name": "Vector 2",
+                "type": "icon",
+                "figma_type": "VECTOR",
+                "dimensions": {
+                  "x": -2527.55517578125,
+                  "y": -1981.3359375,
+                  "width": 496.990478515625,
+                  "height": 311.01751708984375
+                },
+                "style_ref": "style_13"
+              },
+              {
+                "id": "0:23",
+                "name": "Vector 5",
+                "type": "icon",
+                "figma_type": "VECTOR",
+                "dimensions": {
+                  "x": -2523.95703125,
+                  "y": -1958.43408203125,
+                  "width": 500.9568786621094,
+                  "height": 354.4341125488281
+                },
+                "style_ref": "style_14"
+              },
+              {
+                "id": "0:24",
+                "name": "Vector 3",
+                "type": "icon",
+                "figma_type": "VECTOR",
+                "dimensions": {
+                  "x": -2224.7275390625,
+                  "y": -2144.0,
+                  "width": 189.9601593017578,
+                  "height": 123.3194808959961
+                },
+                "style_ref": "style_15"
+              },
+              {
+                "id": "0:25",
+                "name": "Vector 6",
+                "type": "icon",
+                "figma_type": "VECTOR",
+                "dimensions": {
+                  "x": -2110.415283203125,
+                  "y": -1760.535888671875,
+                  "width": 76.4883804321289,
+                  "height": 153.85572814941406
+                },
+                "style_ref": "style_16"
+              },
+              {
+                "id": "0:26",
+                "name": "Vector 7",
+                "type": "icon",
+                "figma_type": "VECTOR",
+                "dimensions": {
+                  "x": -2218.00341796875,
+                  "y": -1888.552001953125,
+                  "width": 186.5980224609375,
+                  "height": 281.8730773925781
+                },
+                "style_ref": "style_14"
+              },
+              {
+                "id": "0:27",
+                "name": "Vector 8",
+                "type": "icon",
+                "figma_type": "VECTOR",
+                "dimensions": {
+                  "x": -2318.867431640625,
+                  "y": -1965.412109375,
+                  "width": 287.73406982421875,
+                  "height": 359.9083557128906
+                },
+                "style_ref": "style_13"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "0:28",
+        "name": "green board",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -1967.0,
+          "y": -2144.0,
+          "width": 476.0,
+          "height": 537.0
+        },
+        "style_ref": "style_17"
+      },
+      {
+        "id": "0:29",
+        "name": "Rectangle 26",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -3574.0,
+          "y": -1112.0,
+          "width": 1254.0,
+          "height": 673.0
+        },
+        "style_ref": "style_18"
+      },
+      {
+        "id": "0:30",
+        "name": "Rectangle 25",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -2707.0,
+          "y": -1572.0,
+          "width": 387.0,
+          "height": 415.0
+        },
+        "style_ref": "style_19"
+      },
+      {
+        "id": "0:31",
+        "name": "revenue",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3554.0,
+          "y": -2126.0,
+          "width": 148.0,
+          "height": 36.0
+        },
+        "style_ref": "style_1",
+        "text": "revenue",
+        "typography_ref": "typo_38"
+      },
+      {
+        "id": "0:32",
+        "name": "Task not finishes",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3545.0,
+          "y": -1745.0,
+          "width": 239.0,
+          "height": 38.0
+        },
+        "style_ref": "style_1",
+        "text": "Task not finishes",
+        "typography_ref": "typo_39"
+      },
+      {
+        "id": "0:33",
+        "name": "Your Company",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3876.0,
+          "y": -2213.0,
+          "width": 239.0,
+          "height": 38.0
+        },
+        "style_ref": "style_1",
+        "text": "Your Company",
+        "typography_ref": "typo_39"
+      },
+      {
+        "id": "0:34",
+        "name": "Dashboard",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3846.0,
+          "y": -2141.0,
+          "width": 239.0,
+          "height": 38.0
+        },
+        "style_ref": "style_20",
+        "text": "Dashboard",
+        "typography_ref": "typo_40"
+      },
+      {
+        "id": "0:35",
+        "name": "Dashboard Light",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3846.0,
+          "y": -2078.0,
+          "width": 239.0,
+          "height": 38.0
+        },
+        "style_ref": "style_1",
+        "text": "Dashboard Light",
+        "typography_ref": "typo_39"
+      },
+      {
+        "id": "0:36",
+        "name": "Dashboard Dark",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3846.0,
+          "y": -2015.0,
+          "width": 239.0,
+          "height": 38.0
+        },
+        "style_ref": "style_20",
+        "text": "Dashboard Dark",
+        "typography_ref": "typo_40"
+      },
+      {
+        "id": "0:37",
+        "name": "Employee Board",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3846.0,
+          "y": -1952.0,
+          "width": 239.0,
+          "height": 76.0
+        },
+        "style_ref": "style_1",
+        "text": "Employee Board\n",
+        "typography_ref": "typo_39"
+      },
+      {
+        "id": "0:38",
+        "name": "Products",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3846.0,
+          "y": -1889.0,
+          "width": 239.0,
+          "height": 38.0
+        },
+        "style_ref": "style_1",
+        "text": "Products",
+        "typography_ref": "typo_39"
+      },
+      {
+        "id": "0:39",
+        "name": "Sales",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3846.0,
+          "y": -1826.0,
+          "width": 239.0,
+          "height": 38.0
+        },
+        "style_ref": "style_1",
+        "text": "Sales",
+        "typography_ref": "typo_39"
+      },
+      {
+        "id": "0:40",
+        "name": "Tasks",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3846.0,
+          "y": -1744.0,
+          "width": 239.0,
+          "height": 38.0
+        },
+        "style_ref": "style_1",
+        "text": "Tasks",
+        "typography_ref": "typo_39"
+      },
+      {
+        "id": "0:41",
+        "name": "Projects",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3846.0,
+          "y": -1681.0,
+          "width": 239.0,
+          "height": 38.0
+        },
+        "style_ref": "style_1",
+        "text": "Projects",
+        "typography_ref": "typo_39"
+      },
+      {
+        "id": "0:42",
+        "name": "Total Deposits",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3027.0,
+          "y": -1763.0,
+          "width": 239.0,
+          "height": 30.0
+        },
+        "style_ref": "style_1",
+        "text": "Total Deposits",
+        "typography_ref": "typo_41"
+      },
+      {
+        "id": "0:43",
+        "name": "My To Do Items",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2693.0,
+          "y": -1546.0,
+          "width": 143.0,
+          "height": 26.0
+        },
+        "style_ref": "style_1",
+        "text": "My To Do Items",
+        "typography_ref": "typo_42"
+      },
+      {
+        "id": "0:44",
+        "name": "View All + Add To Do",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2508.0,
+          "y": -1546.0,
+          "width": 211.0,
+          "height": 23.0
+        },
+        "style_ref": "style_1",
+        "text": "View All  +  Add To Do",
+        "typography_ref": "typo_43"
+      },
+      {
+        "id": "0:45",
+        "name": "Complete this projects Monday",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2652.0,
+          "y": -1455.0,
+          "width": 250.0,
+          "height": 23.0
+        },
+        "style_ref": "style_1",
+        "text": "Complete this projects Monday",
+        "typography_ref": "typo_43"
+      },
+      {
+        "id": "0:46",
+        "name": "2023-14-24",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2652.0,
+          "y": -1430.0,
+          "width": 89.0,
+          "height": 20.0
+        },
+        "style_ref": "style_1",
+        "text": "2023-14-24",
+        "typography_ref": "typo_44"
+      },
+      {
+        "id": "0:47",
+        "name": "2023-14-24",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2652.0,
+          "y": -1356.0,
+          "width": 89.0,
+          "height": 20.0
+        },
+        "style_ref": "style_1",
+        "text": "2023-14-24",
+        "typography_ref": "typo_44"
+      },
+      {
+        "id": "0:48",
+        "name": "2023-14-24",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2652.0,
+          "y": -1282.0,
+          "width": 89.0,
+          "height": 20.0
+        },
+        "style_ref": "style_1",
+        "text": "2023-14-24",
+        "typography_ref": "typo_44"
+      },
+      {
+        "id": "0:49",
+        "name": "2023-14-24",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2652.0,
+          "y": -1208.0,
+          "width": 89.0,
+          "height": 20.0
+        },
+        "style_ref": "style_1",
+        "text": "2023-14-24",
+        "typography_ref": "typo_44"
+      },
+      {
+        "id": "0:50",
+        "name": "Complete this projects Monday",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2652.0,
+          "y": -1381.0,
+          "width": 250.0,
+          "height": 23.0
+        },
+        "style_ref": "style_1",
+        "text": "Complete this projects Monday",
+        "typography_ref": "typo_43"
+      },
+      {
+        "id": "0:51",
+        "name": "Complete this projects Monday",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2652.0,
+          "y": -1307.0,
+          "width": 250.0,
+          "height": 23.0
+        },
+        "style_ref": "style_1",
+        "text": "Complete this projects Monday",
+        "typography_ref": "typo_43"
+      },
+      {
+        "id": "0:52",
+        "name": "Complete this projects Monday",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2652.0,
+          "y": -1233.0,
+          "width": 250.0,
+          "height": 23.0
+        },
+        "style_ref": "style_1",
+        "text": "Complete this projects Monday",
+        "typography_ref": "typo_43"
+      },
+      {
+        "id": "0:53",
+        "name": "Latest to do’s",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2667.0,
+          "y": -1502.0,
+          "width": 104.0,
+          "height": 21.0
+        },
+        "style_ref": "style_21",
+        "text": "Latest to do’s",
+        "typography_ref": "typo_45"
+      },
+      {
+        "id": "0:54",
+        "name": "Rectangle 24",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -3574.0,
+          "y": -1572.0,
+          "width": 829.0,
+          "height": 415.0
+        },
+        "style_ref": "style_19"
+      },
+      {
+        "id": "0:55",
+        "name": "Latest finished to do’s",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2652.0,
+          "y": -1402.0,
+          "width": 164.0,
+          "height": 21.0
+        },
+        "style_ref": "style_22",
+        "text": "Latest finished to do’s",
+        "typography_ref": "typo_46"
+      },
+      {
+        "id": "0:56",
+        "name": "$1200.00",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3026.0,
+          "y": -1735.0,
+          "width": 239.0,
+          "height": 38.0
+        },
+        "style_ref": "style_1",
+        "text": "$1200.00",
+        "typography_ref": "typo_39"
+      },
+      {
+        "id": "0:57",
+        "name": "Vector 9",
+        "type": "icon",
+        "figma_type": "VECTOR",
+        "dimensions": {
+          "x": -3033.0,
+          "y": -1702.0,
+          "width": 403.5,
+          "height": 69.0
+        }
+      },
+      {
+        "id": "0:58",
+        "name": "Vector 10",
+        "type": "icon",
+        "figma_type": "VECTOR",
+        "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/1df52a0e-ee53-4482-bbeb-963163be1e25",
+        "dimensions": {
+          "x": -3033.0,
+          "y": -1685.5,
+          "width": 15.5,
+          "height": 14.0
+        },
+        "style_ref": "style_23",
+        "imagePath": "/assets/figmaimages/figma_image_0_58.svg"
+      },
+      {
+        "id": "0:59",
+        "name": "Complete Task",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3545.0,
+          "y": -1672.0,
+          "width": 239.0,
+          "height": 30.0
+        },
+        "style_ref": "style_1",
+        "text": "Complete Task",
+        "typography_ref": "typo_41"
+      },
+      {
+        "id": "0:60",
+        "name": "20",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3545.0,
+          "y": -1713.0,
+          "width": 239.0,
+          "height": 48.0
+        },
+        "style_ref": "style_1",
+        "text": "20",
+        "typography_ref": "typo_47"
+      },
+      {
+        "id": "0:61",
+        "name": "Expenses",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3042.0,
+          "y": -2126.0,
+          "width": 148.0,
+          "height": 36.0
+        },
+        "style_ref": "style_1",
+        "text": "Expenses",
+        "typography_ref": "typo_38"
+      },
+      {
+        "id": "0:62",
+        "name": "$920.035",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3554.0,
+          "y": -2100.0,
+          "width": 219.0,
+          "height": 53.0
+        },
+        "style_ref": "style_1",
+        "text": "$920.035",
+        "typography_ref": "typo_48"
+      },
+      {
+        "id": "0:63",
+        "name": "$920.035",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3042.0,
+          "y": -2100.0,
+          "width": 219.0,
+          "height": 53.0
+        },
+        "style_ref": "style_1",
+        "text": "$920.035",
+        "typography_ref": "typo_48"
+      },
+      {
+        "id": "0:64",
+        "name": "Ellipse 21",
+        "type": "ellipse",
+        "figma_type": "ELLIPSE",
+        "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/aebd6a24-13a9-4631-bf28-e24221d50732",
+        "dimensions": {
+          "x": -3184.0,
+          "y": -2118.0,
+          "width": 50.0,
+          "height": 49.0
+        },
+        "style_ref": "style_112",
+        "imagePath": "/assets/figmaimages/figma_image_0_64.svg"
+      },
+      {
+        "id": "0:65",
+        "name": "Ellipse 22",
+        "type": "ellipse",
+        "figma_type": "ELLIPSE",
+        "dimensions": {
+          "x": -2707.0,
+          "y": -2122.0,
+          "width": 50.0,
+          "height": 49.0
+        },
+        "style_ref": "style_112"
+      },
+      {
+        "id": "0:66",
+        "name": "Ellipse 27",
+        "type": "ellipse",
+        "figma_type": "ELLIPSE",
+        "dimensions": {
+          "x": -2428.0,
+          "y": -1682.0,
+          "width": 50.0,
+          "height": 49.0
+        },
+        "style_ref": "style_112"
+      },
+      {
+        "id": "0:67",
+        "name": "25+",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3164.0,
+          "y": -2104.0,
+          "width": 36.0,
+          "height": 21.0
+        },
+        "style_ref": "style_113",
+        "text": "25+",
+        "typography_ref": "typo_49"
+      },
+      {
+        "id": "0:68",
+        "name": "25+",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2408.0,
+          "y": -1668.0,
+          "width": 36.0,
+          "height": 21.0
+        },
+        "style_ref": "style_113",
+        "text": "25+",
+        "typography_ref": "typo_49"
+      },
+      {
+        "id": "0:69",
+        "name": "Ellipse 20",
+        "type": "ellipse",
+        "figma_type": "ELLIPSE",
+        "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/53669bf6-84fb-4fa4-a97b-cf815e30884a",
+        "dimensions": {
+          "x": -3218.0,
+          "y": -2118.0,
+          "width": 51.0,
+          "height": 49.0
+        },
+        "style_ref": "style_114",
+        "imagePath": "/assets/figmaimages/figma_image_0_69.png"
+      },
+      {
+        "id": "0:70",
+        "name": "Ellipse 28",
+        "type": "ellipse",
+        "figma_type": "ELLIPSE",
+        "dimensions": {
+          "x": -2462.0,
+          "y": -1682.0,
+          "width": 51.0,
+          "height": 49.0
+        },
+        "style_ref": "style_114"
+      },
+      {
+        "id": "0:71",
+        "name": "Ellipse 19",
+        "type": "ellipse",
+        "figma_type": "ELLIPSE",
+        "dimensions": {
+          "x": -3255.0,
+          "y": -2118.0,
+          "width": 51.0,
+          "height": 49.0
+        },
+        "style_ref": "style_114"
+      },
+      {
+        "id": "0:72",
+        "name": "Ellipse 29",
+        "type": "ellipse",
+        "figma_type": "ELLIPSE",
+        "dimensions": {
+          "x": -2499.0,
+          "y": -1682.0,
+          "width": 51.0,
+          "height": 49.0
+        },
+        "style_ref": "style_114"
+      },
+      {
+        "id": "0:73",
+        "name": "Bar",
+        "type": "container",
+        "figma_type": "GROUP",
+        "dimensions": {
+          "x": -3554.44921875,
+          "y": -2039.0,
+          "width": 234.60870361328125,
+          "height": 196.0
+        },
+        "children": [
+          {
+            "id": "0:74",
+            "name": "Rectangle 27",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -3554.44921875,
+              "y": -2014.0,
+              "width": 32.92753601074219,
+              "height": 171.0
+            },
+            "style_ref": "style_20"
+          },
+          {
+            "id": "0:75",
+            "name": "Rectangle 28",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -3504.02880859375,
+              "y": -1978.0,
+              "width": 32.92753601074219,
+              "height": 133.0
+            },
+            "style_ref": "style_25"
+          },
+          {
+            "id": "0:76",
+            "name": "Rectangle 29",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -3453.608642578125,
+              "y": -2039.0,
+              "width": 32.92753601074219,
+              "height": 194.0
+            },
+            "style_ref": "style_20"
+          },
+          {
+            "id": "0:77",
+            "name": "Rectangle 30",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/84f3795d-9ebb-4c43-92cd-10592562eb22",
+            "dimensions": {
+              "x": -3403.188232421875,
+              "y": -1905.0,
+              "width": 32.92753601074219,
+              "height": 60.0
+            },
+            "style_ref": "style_25",
+            "imagePath": "/assets/figmaimages/figma_image_0_77.svg"
+          },
+          {
+            "id": "0:78",
+            "name": "Rectangle 31",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -3352.76806640625,
+              "y": -1954.0,
+              "width": 32.92753601074219,
+              "height": 109.0
+            },
+            "style_ref": "style_20"
+          }
+        ]
+      },
+      {
+        "id": "0:79",
+        "name": "Bar",
+        "type": "container",
+        "figma_type": "GROUP",
+        "dimensions": {
+          "x": -3042.0,
+          "y": -2039.0,
+          "width": 235.0,
+          "height": 194.0
+        },
+        "children": [
+          {
+            "id": "0:80",
+            "name": "Rectangle 27",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/9a4177c0-9b11-4be9-b64d-3a975509e318",
+            "dimensions": {
+              "x": -3042.0,
+              "y": -1905.0,
+              "width": 33.0,
+              "height": 60.0
+            },
+            "style_ref": "style_26",
+            "imagePath": "/assets/figmaimages/figma_image_0_80.svg"
+          },
+          {
+            "id": "0:81",
+            "name": "Rectangle 28",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -2992.0,
+              "y": -1938.0,
+              "width": 33.0,
+              "height": 91.0
+            },
+            "style_ref": "style_1"
+          },
+          {
+            "id": "0:82",
+            "name": "Rectangle 29",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -2941.0,
+              "y": -1998.0,
+              "width": 33.0,
+              "height": 151.0
+            },
+            "style_ref": "style_24"
+          },
+          {
+            "id": "0:83",
+            "name": "Rectangle 30",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -2891.0,
+              "y": -1956.0,
+              "width": 33.0,
+              "height": 109.0
+            },
+            "style_ref": "style_1"
+          },
+          {
+            "id": "0:84",
+            "name": "Rectangle 31",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -2840.0,
+              "y": -2039.0,
+              "width": 33.0,
+              "height": 192.0
+            },
+            "style_ref": "style_24"
+          }
+        ]
+      },
+      {
+        "id": "0:85",
+        "name": "Bar",
+        "type": "container",
+        "figma_type": "GROUP",
+        "dimensions": {
+          "x": -3306.0,
+          "y": -2019.0,
+          "width": 178.0,
+          "height": 175.0
+        },
+        "children": [
+          {
+            "id": "0:86",
+            "name": "Rectangle 27",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -3306.0,
+              "y": -1988.0,
+              "width": 33.0,
+              "height": 144.0
+            },
+            "style_ref": "style_20"
+          },
+          {
+            "id": "0:87",
+            "name": "Rectangle 28",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -3256.0,
+              "y": -2019.0,
+              "width": 33.0,
+              "height": 173.0
+            },
+            "style_ref": "style_25"
+          },
+          {
+            "id": "0:88",
+            "name": "Rectangle 29",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -3205.0,
+              "y": -1962.0,
+              "width": 33.0,
+              "height": 116.0
+            },
+            "style_ref": "style_20"
+          },
+          {
+            "id": "0:89",
+            "name": "Rectangle 30",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -3161.0,
+              "y": -1988.0,
+              "width": 33.0,
+              "height": 142.0
+            },
+            "style_ref": "style_25"
+          }
+        ]
+      },
+      {
+        "id": "0:90",
+        "name": "Bar",
+        "type": "container",
+        "figma_type": "GROUP",
+        "dimensions": {
+          "x": -2794.0,
+          "y": -2014.0,
+          "width": 178.44921875,
+          "height": 168.0
+        },
+        "children": [
+          {
+            "id": "0:91",
+            "name": "Rectangle 27",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/47cc4b82-060e-40f9-97b4-d14c29062851",
+            "dimensions": {
+              "x": -2794.0,
+              "y": -1905.0,
+              "width": 33.0,
+              "height": 59.0
+            },
+            "style_ref": "style_24",
+            "imagePath": "/assets/figmaimages/figma_image_0_91.svg"
+          },
+          {
+            "id": "0:92",
+            "name": "Rectangle 28",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -2744.0,
+              "y": -1988.0,
+              "width": 33.0,
+              "height": 140.0
+            },
+            "style_ref": "style_1"
+          },
+          {
+            "id": "0:93",
+            "name": "Rectangle 29",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -2693.0,
+              "y": -2014.0,
+              "width": 33.0,
+              "height": 166.0
+            },
+            "style_ref": "style_24"
+          },
+          {
+            "id": "0:94",
+            "name": "Rectangle 30",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -2648.55078125,
+              "y": -1990.0,
+              "width": 33.0,
+              "height": 142.0
+            },
+            "style_ref": "style_1"
+          }
+        ]
+      },
+      {
+        "id": "0:95",
+        "name": "Rectangle 33",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -3545.0,
+          "y": -1635.0,
+          "width": 402.0,
+          "height": 6.0
+        },
+        "style_ref": "style_27"
+      },
+      {
+        "id": "0:96",
+        "name": "Rectangle 34",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -3545.0,
+          "y": -1635.0,
+          "width": 253.0,
+          "height": 6.0
+        },
+        "style_ref": "style_28"
+      },
+      {
+        "id": "0:97",
+        "name": "Vector 11",
+        "type": "icon",
+        "figma_type": "VECTOR",
+        "dimensions": {
+          "x": -3017.5,
+          "y": -1702.0,
+          "width": 388.5,
+          "height": 30.5
+        },
+        "style_ref": "style_29"
+      },
+      {
+        "id": "0:98",
+        "name": "solar:dollar-bold",
+        "type": "container",
+        "figma_type": "FRAME",
+        "dimensions": {
+          "x": -2660.0,
+          "y": -1748.0,
+          "width": 41.0,
+          "height": 41.0
+        },
+        "style_ref": "style_1",
+        "children": [
+          {
+            "id": "0:99",
+            "name": "Vector",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -2643.34375,
+              "y": -1734.5947265625,
+              "width": 7.6875,
+              "height": 14.187708854675293
+            },
+            "style_ref": "style_30"
+          },
+          {
+            "id": "0:100",
+            "name": "Vector",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/2aefd2a3-4375-43a4-baa3-a4f9d65d447b",
+            "dimensions": {
+              "x": -2656.583251953125,
+              "y": -1744.5833740234375,
+              "width": 34.16666793823242,
+              "height": 34.16666793823242
+            },
+            "style_ref": "style_30",
+            "imagePath": "/assets/figmaimages/figma_image_0_100.svg"
+          }
+        ]
+      },
+      {
+        "id": "0:101",
+        "name": "Ellipse 25",
+        "type": "ellipse",
+        "figma_type": "ELLIPSE",
+        "dimensions": {
+          "x": -1819.0,
+          "y": -2125.0,
+          "width": 167.0,
+          "height": 167.0
+        },
+        "style_ref": "style_31"
+      },
+      {
+        "id": "0:102",
+        "name": "Ellipse 26",
+        "type": "ellipse",
+        "figma_type": "ELLIPSE",
+        "dimensions": {
+          "x": -1819.0,
+          "y": -2125.0,
+          "width": 167.0,
+          "height": 167.0
+        },
+        "style_ref": "style_32"
+      },
+      {
+        "id": "0:103",
+        "name": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2499.0,
+          "y": -1993.0,
+          "width": 392.0,
+          "height": 270.0
+        },
+        "style_ref": "style_1",
+        "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
+        "typography_ref": "typo_50"
+      },
+      {
+        "id": "0:104",
+        "name": "15k+ Happy Clients",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2362.0,
+          "y": -1696.0,
+          "width": 152.0,
+          "height": 71.0
+        },
+        "style_ref": "style_1",
+        "text": "15k+\nHappy Clients ",
+        "typography_ref": "typo_50"
+      },
+      {
+        "id": "0:105",
+        "name": "75%",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -1771.0,
+          "y": -2071.0,
+          "width": 152.0,
+          "height": 60.0
+        },
+        "style_ref": "style_1",
+        "text": "75%",
+        "typography_ref": "typo_51"
+      },
+      {
+        "id": "0:106",
+        "name": "Rectangle 69",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -3572.0,
+          "y": -998.0,
+          "width": 1253.0,
+          "height": 114.0
+        },
+        "style_ref": "style_33"
+      },
+      {
+        "id": "0:107",
+        "name": "Your finance , safe and secure",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2499.0,
+          "y": -2100.0,
+          "width": 392.0,
+          "height": 106.0
+        },
+        "style_ref": "style_1",
+        "text": "Your finance , safe and secure",
+        "typography_ref": "typo_48"
+      },
+      {
+        "id": "0:108",
+        "name": "My Progress",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -1839.0,
+          "y": -1897.0,
+          "width": 392.0,
+          "height": 53.0
+        },
+        "style_ref": "style_1",
+        "text": "My Progress",
+        "typography_ref": "typo_48"
+      },
+      {
+        "id": "0:109",
+        "name": "Active Projects",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3531.0,
+          "y": -1069.0,
+          "width": 308.0,
+          "height": 53.0
+        },
+        "style_ref": "style_1",
+        "text": "Active Projects",
+        "typography_ref": "typo_48"
+      },
+      {
+        "id": "0:110",
+        "name": "Project Name",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3531.0,
+          "y": -963.0,
+          "width": 198.0,
+          "height": 38.0
+        },
+        "style_ref": "style_1",
+        "text": "Project Name",
+        "typography_ref": "typo_39"
+      },
+      {
+        "id": "0:111",
+        "name": "Bender project",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3532.0,
+          "y": -847.0,
+          "width": 198.0,
+          "height": 38.0
+        },
+        "style_ref": "style_1",
+        "text": "Bender project",
+        "typography_ref": "typo_39"
+      },
+      {
+        "id": "0:112",
+        "name": "Batman",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3533.0,
+          "y": -734.0,
+          "width": 198.0,
+          "height": 38.0
+        },
+        "style_ref": "style_1",
+        "text": "Batman",
+        "typography_ref": "typo_39"
+      },
+      {
+        "id": "0:113",
+        "name": "Candy",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3534.0,
+          "y": -638.0,
+          "width": 198.0,
+          "height": 38.0
+        },
+        "style_ref": "style_1",
+        "text": "Candy",
+        "typography_ref": "typo_39"
+      },
+      {
+        "id": "0:114",
+        "name": "Throwing",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3535.0,
+          "y": -520.0,
+          "width": 198.0,
+          "height": 38.0
+        },
+        "style_ref": "style_1",
+        "text": "Throwing",
+        "typography_ref": "typo_39"
+      },
+      {
+        "id": "0:115",
+        "name": "Project Lead",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3286.0,
+          "y": -963.0,
+          "width": 198.0,
+          "height": 38.0
+        },
+        "style_ref": "style_1",
+        "text": "Project Lead",
+        "typography_ref": "typo_39"
+      },
+      {
+        "id": "0:116",
+        "name": "Johnson",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3286.0,
+          "y": -847.0,
+          "width": 198.0,
+          "height": 38.0
+        },
+        "style_ref": "style_1",
+        "text": "Johnson",
+        "typography_ref": "typo_39"
+      },
+      {
+        "id": "0:117",
+        "name": "53%",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2856.0,
+          "y": -847.0,
+          "width": 68.0,
+          "height": 38.0
+        },
+        "style_ref": "style_34",
+        "text": "53%",
+        "typography_ref": "typo_52"
+      },
+      {
+        "id": "0:118",
+        "name": "51%",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2856.0,
+          "y": -520.0,
+          "width": 68.0,
+          "height": 38.0
+        },
+        "style_ref": "style_34",
+        "text": "51%",
+        "typography_ref": "typo_52"
+      },
+      {
+        "id": "0:119",
+        "name": "24%",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2856.0,
+          "y": -734.0,
+          "width": 68.0,
+          "height": 38.0
+        },
+        "style_ref": "style_35",
+        "text": "24%",
+        "typography_ref": "typo_53"
+      },
+      {
+        "id": "0:120",
+        "name": "86%",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2856.0,
+          "y": -638.0,
+          "width": 68.0,
+          "height": 38.0
+        },
+        "style_ref": "style_36",
+        "text": "86%",
+        "typography_ref": "typo_54"
+      },
+      {
+        "id": "0:121",
+        "name": "William",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3286.0,
+          "y": -734.0,
+          "width": 198.0,
+          "height": 38.0
+        },
+        "style_ref": "style_1",
+        "text": "William",
+        "typography_ref": "typo_39"
+      },
+      {
+        "id": "0:122",
+        "name": "Paul",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3286.0,
+          "y": -638.0,
+          "width": 198.0,
+          "height": 38.0
+        },
+        "style_ref": "style_1",
+        "text": "Paul",
+        "typography_ref": "typo_39"
+      },
+      {
+        "id": "0:123",
+        "name": "Ellisebeth",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3286.0,
+          "y": -520.0,
+          "width": 198.0,
+          "height": 38.0
+        },
+        "style_ref": "style_1",
+        "text": "Ellisebeth",
+        "typography_ref": "typo_39"
+      },
+      {
+        "id": "0:124",
+        "name": "Progress",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -3026.0,
+          "y": -963.0,
+          "width": 198.0,
+          "height": 38.0
+        },
+        "style_ref": "style_1",
+        "text": "Progress",
+        "typography_ref": "typo_39"
+      },
+      {
+        "id": "0:125",
+        "name": "Status",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2725.0,
+          "y": -963.0,
+          "width": 198.0,
+          "height": 38.0
+        },
+        "style_ref": "style_1",
+        "text": "Status",
+        "typography_ref": "typo_39"
+      },
+      {
+        "id": "0:126",
+        "name": "Due Date",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2538.0,
+          "y": -963.0,
+          "width": 198.0,
+          "height": 38.0
+        },
+        "style_ref": "style_1",
+        "text": "Due Date",
+        "typography_ref": "typo_39"
+      },
+      {
+        "id": "0:127",
+        "name": "06 Jan 2024",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2538.0,
+          "y": -850.0,
+          "width": 198.0,
+          "height": 38.0
+        },
+        "style_ref": "style_1",
+        "text": "06 Jan 2024",
+        "typography_ref": "typo_39"
+      },
+      {
+        "id": "0:128",
+        "name": "06 Jan 2024",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2538.0,
+          "y": -740.0,
+          "width": 198.0,
+          "height": 38.0
+        },
+        "style_ref": "style_1",
+        "text": "06 Jan 2024",
+        "typography_ref": "typo_39"
+      },
+      {
+        "id": "0:129",
+        "name": "30 Jan 2024",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2538.0,
+          "y": -637.0,
+          "width": 198.0,
+          "height": 38.0
+        },
+        "style_ref": "style_1",
+        "text": "30 Jan 2024",
+        "typography_ref": "typo_39"
+      },
+      {
+        "id": "0:130",
+        "name": "11 Jan 2024",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2538.0,
+          "y": -521.0,
+          "width": 198.0,
+          "height": 38.0
+        },
+        "style_ref": "style_1",
+        "text": "11  Jan 2024",
+        "typography_ref": "typo_39"
+      },
+      {
+        "id": "0:131",
+        "name": "Export Report",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2660.0,
+          "y": -1069.0,
+          "width": 308.0,
+          "height": 53.0
+        },
+        "style_ref": "style_34",
+        "text": "Export Report",
+        "typography_ref": "typo_55"
+      },
+      {
+        "id": "0:132",
+        "name": "Showcase a visual representation of the user's financial progress.",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -1925.0,
+          "y": -1833.0,
+          "width": 392.0,
+          "height": 60.0
+        },
+        "style_ref": "style_1",
+        "text": "Showcase a visual representation of the user's financial progress.",
+        "typography_ref": "typo_56"
+      },
+      {
+        "id": "0:133",
+        "name": "Rectangle 35",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -1848.0,
+          "y": -1751.0,
+          "width": 252.0,
+          "height": 80.0
+        },
+        "style_ref": "style_37"
+      },
+      {
+        "id": "0:134",
+        "name": "More Details",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -1815.0,
+          "y": -1734.0,
+          "width": 392.0,
+          "height": 45.0
+        },
+        "style_ref": "style_38",
+        "text": "More Details",
+        "typography_ref": "typo_57"
+      },
+      {
+        "id": "0:135",
+        "name": "Ellipse 30",
+        "type": "ellipse",
+        "figma_type": "ELLIPSE",
+        "dimensions": {
+          "x": -1762.0,
+          "y": -1999.0,
+          "width": 67.0,
+          "height": 67.0
+        },
+        "style_ref": "style_20"
+      },
+      {
+        "id": "0:136",
+        "name": "Line 2",
+        "type": "line",
+        "figma_type": "LINE",
+        "dimensions": {
+          "x": -2682.0000008305165,
+          "y": -2107.0,
+          "width": 8.305164556077216e-07,
+          "height": 19.0
+        },
+        "style_ref": "style_115"
+      },
+      {
+        "id": "0:137",
+        "name": "Line 3",
+        "type": "line",
+        "figma_type": "LINE",
+        "dimensions": {
+          "x": -2692.0,
+          "y": -2097.0,
+          "width": 21.0,
+          "height": 0.0
+        },
+        "style_ref": "style_115"
+      },
+      {
+        "id": "0:138",
+        "name": "icon-park-solid:correct",
+        "type": "container",
+        "figma_type": "FRAME",
+        "dimensions": {
+          "x": -1753.0,
+          "y": -1989.0,
+          "width": 48.0,
+          "height": 48.0
+        },
+        "style_ref": "style_1",
+        "children": [
+          {
+            "id": "0:139",
+            "name": "Vector",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/4a5ad3e2-e8c5-47d1-8b5a-7bcdee98eaba",
+            "dimensions": {
+              "x": -1749.0,
+              "y": -1980.0,
+              "width": 40.0,
+              "height": 30.0
+            },
+            "style_ref": "style_40",
+            "imagePath": "/assets/figmaimages/figma_image_0_139.svg"
+          }
+        ]
+      },
+      {
+        "id": "0:140",
+        "name": "icon-park-solid:correct",
+        "type": "container",
+        "figma_type": "FRAME",
+        "dimensions": {
+          "x": -2672.0,
+          "y": -1396.0,
+          "width": 10.0,
+          "height": 10.0
+        },
+        "style_ref": "style_1"
+      },
+      {
+        "id": "0:141",
+        "name": "Vector",
+        "type": "icon",
+        "figma_type": "VECTOR",
+        "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/062f02ea-8f45-48da-973b-61483a9adf7d",
+        "dimensions": {
+          "x": -2679.0,
+          "y": -1396.0,
+          "width": 12.0,
+          "height": 9.0
+        },
+        "style_ref": "style_41",
+        "imagePath": "/assets/figmaimages/figma_image_0_141.svg"
+      },
+      {
+        "id": "0:142",
+        "name": "iconoir:edit",
+        "type": "container",
+        "figma_type": "FRAME",
+        "dimensions": {
+          "x": -2366.0,
+          "y": -1460.0,
+          "width": 24.0,
+          "height": 24.0
+        },
+        "style_ref": "style_1",
+        "children": [
+          {
+            "id": "0:143",
+            "name": "Vector",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/ccf69c29-0312-4b86-a6d6-f8a82473f6a0",
+            "dimensions": {
+              "x": -2363.0,
+              "y": -1457.0,
+              "width": 18.0,
+              "height": 18.0
+            },
+            "style_ref": "style_42",
+            "imagePath": "/assets/figmaimages/figma_image_0_143.svg"
+          }
+        ]
+      },
+      {
+        "id": "0:144",
+        "name": "iconoir:edit",
+        "type": "container",
+        "figma_type": "FRAME",
+        "dimensions": {
+          "x": -2366.0,
+          "y": -1386.0,
+          "width": 24.0,
+          "height": 24.0
+        },
+        "style_ref": "style_1",
+        "children": [
+          {
+            "id": "0:145",
+            "name": "Vector",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -2363.0,
+              "y": -1383.0,
+              "width": 18.0,
+              "height": 18.0
+            },
+            "style_ref": "style_42"
+          }
+        ]
+      },
+      {
+        "id": "0:146",
+        "name": "iconoir:edit",
+        "type": "container",
+        "figma_type": "FRAME",
+        "dimensions": {
+          "x": -2366.0,
+          "y": -1312.0,
+          "width": 24.0,
+          "height": 24.0
+        },
+        "style_ref": "style_1",
+        "children": [
+          {
+            "id": "0:147",
+            "name": "Vector",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -2363.0,
+              "y": -1309.0,
+              "width": 18.0,
+              "height": 18.0
+            },
+            "style_ref": "style_42"
+          }
+        ]
+      },
+      {
+        "id": "0:148",
+        "name": "iconoir:edit",
+        "type": "container",
+        "figma_type": "FRAME",
+        "dimensions": {
+          "x": -2366.0,
+          "y": -1237.0,
+          "width": 24.0,
+          "height": 24.0
+        },
+        "style_ref": "style_1",
+        "children": [
+          {
+            "id": "0:149",
+            "name": "Vector",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -2363.0,
+              "y": -1234.0,
+              "width": 18.0,
+              "height": 18.0
+            },
+            "style_ref": "style_42"
+          }
+        ]
+      },
+      {
+        "id": "0:150",
+        "name": "mdi:delete-outline",
+        "type": "container",
+        "figma_type": "FRAME",
+        "dimensions": {
+          "x": -2403.0,
+          "y": -1459.0,
+          "width": 24.0,
+          "height": 24.0
+        },
+        "style_ref": "style_1",
+        "children": [
+          {
+            "id": "0:151",
+            "name": "Vector",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/3e2d417f-c2ac-4f60-9ba8-0a543294fa87",
+            "dimensions": {
+              "x": -2398.0,
+              "y": -1456.0,
+              "width": 14.0,
+              "height": 18.0
+            },
+            "style_ref": "style_43",
+            "imagePath": "/assets/figmaimages/figma_image_0_151.svg"
+          }
+        ]
+      },
+      {
+        "id": "0:152",
+        "name": "mdi:delete-outline",
+        "type": "container",
+        "figma_type": "FRAME",
+        "dimensions": {
+          "x": -2403.0,
+          "y": -1310.0,
+          "width": 24.0,
+          "height": 24.0
+        },
+        "style_ref": "style_1",
+        "children": [
+          {
+            "id": "0:153",
+            "name": "Vector",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -2398.0,
+              "y": -1307.0,
+              "width": 14.0,
+              "height": 18.0
+            },
+            "style_ref": "style_43"
+          }
+        ]
+      },
+      {
+        "id": "0:154",
+        "name": "mdi:delete-outline",
+        "type": "container",
+        "figma_type": "FRAME",
+        "dimensions": {
+          "x": -2403.0,
+          "y": -1384.0,
+          "width": 24.0,
+          "height": 24.0
+        },
+        "style_ref": "style_1",
+        "children": [
+          {
+            "id": "0:155",
+            "name": "Vector",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -2398.0,
+              "y": -1381.0,
+              "width": 14.0,
+              "height": 18.0
+            },
+            "style_ref": "style_43"
+          }
+        ]
+      },
+      {
+        "id": "0:156",
+        "name": "mdi:delete-outline",
+        "type": "container",
+        "figma_type": "FRAME",
+        "dimensions": {
+          "x": -2404.0,
+          "y": -1237.0,
+          "width": 24.0,
+          "height": 24.0
+        },
+        "style_ref": "style_1",
+        "children": [
+          {
+            "id": "0:157",
+            "name": "Vector",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -2399.0,
+              "y": -1234.0,
+              "width": 14.0,
+              "height": 18.0
+            },
+            "style_ref": "style_43"
+          }
+        ]
+      },
+      {
+        "id": "0:158",
+        "name": "Vector",
+        "type": "icon",
+        "figma_type": "VECTOR",
+        "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/0e0674dd-8444-48f0-a838-b207b77acb59",
+        "dimensions": {
+          "x": -2693.0,
+          "y": -1502.0,
+          "width": 18.0,
+          "height": 17.0
+        },
+        "style_ref": "style_44",
+        "imagePath": "/assets/figmaimages/figma_image_0_158.svg"
+      },
+      {
+        "id": "0:159",
+        "name": "maki:caution",
+        "type": "container",
+        "figma_type": "FRAME",
+        "dimensions": {
+          "x": -2603.0,
+          "y": -1411.0,
+          "width": 15.0,
+          "height": 15.0
+        },
+        "style_ref": "style_1"
+      },
+      {
+        "id": "0:160",
+        "name": "Main Graph",
+        "type": "container",
+        "figma_type": "GROUP",
+        "dimensions": {
+          "x": -3573.0,
+          "y": -1554.0,
+          "width": 828.0,
+          "height": 398.0
+        },
+        "children": [
+          {
+            "id": "0:161",
+            "name": "Vector 12",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -3445.5,
+              "y": -1451.94140625,
+              "width": 600.5,
+              "height": 135.94140625
+            }
+          },
+          {
+            "id": "0:162",
+            "name": "Rectangle 36",
+            "type": "rectangle",
+            "figma_type": "RECTANGLE",
+            "dimensions": {
+              "x": -3148.0,
+              "y": -1546.0,
+              "width": 79.0,
+              "height": 35.0
+            },
+            "style_ref": "style_34"
+          },
+          {
+            "id": "0:163",
+            "name": "Rectangle 37",
+            "type": "rectangle",
+            "figma_type": "RECTANGLE",
+            "dimensions": {
+              "x": -3051.0,
+              "y": -1546.0,
+              "width": 79.0,
+              "height": 35.0
+            },
+            "style_ref": "style_45"
+          },
+          {
+            "id": "0:164",
+            "name": "Rectangle 38",
+            "type": "rectangle",
+            "figma_type": "RECTANGLE",
+            "dimensions": {
+              "x": -2954.0,
+              "y": -1546.0,
+              "width": 79.0,
+              "height": 35.0
+            },
+            "style_ref": "style_45"
+          },
+          {
+            "id": "0:165",
+            "name": "Rectangle 39",
+            "type": "rectangle",
+            "figma_type": "RECTANGLE",
+            "dimensions": {
+              "x": -2857.0,
+              "y": -1546.0,
+              "width": 79.0,
+              "height": 35.0
+            },
+            "style_ref": "style_45"
+          },
+          {
+            "id": "0:166",
+            "name": "Line 4",
+            "type": "line",
+            "figma_type": "LINE",
+            "dimensions": {
+              "x": -3498.0,
+              "y": -1476.022727167233,
+              "width": 719.9999418251864,
+              "height": 1.0227271672329152
+            },
+            "style_ref": "style_46"
+          },
+          {
+            "id": "0:167",
+            "name": "Line 9",
+            "type": "line",
+            "figma_type": "LINE",
+            "dimensions": {
+              "x": -3480.0,
+              "y": -1489.0,
+              "width": 0.0,
+              "height": 190.0233154296875
+            },
+            "style_ref": "style_46"
+          },
+          {
+            "id": "0:168",
+            "name": "Line 6",
+            "type": "line",
+            "figma_type": "LINE",
+            "dimensions": {
+              "x": -3498.0,
+              "y": -1393.999289667233,
+              "width": 719.9999418251864,
+              "height": 1.0227271672329152
+            },
+            "style_ref": "style_46"
+          },
+          {
+            "id": "0:169",
+            "name": "Line 5",
+            "type": "line",
+            "figma_type": "LINE",
+            "dimensions": {
+              "x": -3498.0,
+              "y": -1434.999289667233,
+              "width": 719.9999418251864,
+              "height": 1.0227271672329152
+            },
+            "style_ref": "style_46"
+          },
+          {
+            "id": "0:170",
+            "name": "Line 7",
+            "type": "line",
+            "figma_type": "LINE",
+            "dimensions": {
+              "x": -3498.0,
+              "y": -1352.999289667233,
+              "width": 719.9999418251864,
+              "height": 1.0227271672329152
+            },
+            "style_ref": "style_46"
+          },
+          {
+            "id": "0:171",
+            "name": "Line 8",
+            "type": "line",
+            "figma_type": "LINE",
+            "dimensions": {
+              "x": -3498.0,
+              "y": -1311.999289667233,
+              "width": 719.9999418251864,
+              "height": 1.0227271672329152
+            },
+            "style_ref": "style_46"
+          },
+          {
+            "id": "0:172",
+            "name": "Rectangle 40",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -3463.0,
+              "y": -1436.0,
+              "width": 16.0,
+              "height": 121.0
+            },
+            "style_ref": "style_34"
+          },
+          {
+            "id": "0:173",
+            "name": "Rectangle 44",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -3238.0,
+              "y": -1417.0,
+              "width": 16.0,
+              "height": 102.0
+            },
+            "style_ref": "style_34"
+          },
+          {
+            "id": "0:174",
+            "name": "Rectangle 48",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -3010.0,
+              "y": -1417.0,
+              "width": 16.0,
+              "height": 102.0
+            },
+            "style_ref": "style_34"
+          },
+          {
+            "id": "0:175",
+            "name": "Rectangle 41",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -3404.0,
+              "y": -1475.0,
+              "width": 16.0,
+              "height": 160.0
+            },
+            "style_ref": "style_34"
+          },
+          {
+            "id": "0:176",
+            "name": "Rectangle 45",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -3180.0,
+              "y": -1455.0,
+              "width": 16.0,
+              "height": 140.0
+            },
+            "style_ref": "style_34"
+          },
+          {
+            "id": "0:177",
+            "name": "Rectangle 49",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/1545a613-cea0-4b39-929f-012723a41b16",
+            "dimensions": {
+              "x": -2955.0,
+              "y": -1377.0,
+              "width": 16.0,
+              "height": 62.0
+            },
+            "style_ref": "style_34",
+            "imagePath": "/assets/figmaimages/figma_image_0_177.svg"
+          },
+          {
+            "id": "0:178",
+            "name": "Rectangle 42",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -3347.0,
+              "y": -1393.0,
+              "width": 16.0,
+              "height": 78.0
+            },
+            "style_ref": "style_34"
+          },
+          {
+            "id": "0:179",
+            "name": "Rectangle 46",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -3125.0,
+              "y": -1377.0,
+              "width": 16.0,
+              "height": 62.0
+            },
+            "style_ref": "style_34"
+          },
+          {
+            "id": "0:180",
+            "name": "Rectangle 50",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -2847.0,
+              "y": -1455.0,
+              "width": 16.0,
+              "height": 140.0
+            },
+            "style_ref": "style_34"
+          },
+          {
+            "id": "0:181",
+            "name": "Rectangle 43",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/d0788526-3bb1-45c3-8247-bee98bda030f",
+            "dimensions": {
+              "x": -3292.0,
+              "y": -1358.0,
+              "width": 16.0,
+              "height": 43.0
+            },
+            "style_ref": "style_34",
+            "imagePath": "/assets/figmaimages/figma_image_0_181.svg"
+          },
+          {
+            "id": "0:182",
+            "name": "Rectangle 47",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -3070.0,
+              "y": -1468.0,
+              "width": 16.0,
+              "height": 153.0
+            },
+            "style_ref": "style_34"
+          },
+          {
+            "id": "0:183",
+            "name": "Rectangle 51",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -2901.0,
+              "y": -1436.0,
+              "width": 16.0,
+              "height": 121.0
+            },
+            "style_ref": "style_34"
+          },
+          {
+            "id": "0:184",
+            "name": "Jan",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -3473.0,
+              "y": -1311.0,
+              "width": 37.0,
+              "height": 29.0
+            },
+            "style_ref": "style_1",
+            "text": "Jan",
+            "typography_ref": "typo_58"
+          },
+          {
+            "id": "0:185",
+            "name": "Number of projects",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -3518.0,
+              "y": -1195.0,
+              "width": 118.0,
+              "height": 18.0
+            },
+            "style_ref": "style_1",
+            "text": "Number of projects",
+            "typography_ref": "typo_59"
+          },
+          {
+            "id": "0:186",
+            "name": "Revenue",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -3070.0,
+              "y": -1195.0,
+              "width": 53.0,
+              "height": 18.0
+            },
+            "style_ref": "style_1",
+            "text": "Revenue",
+            "typography_ref": "typo_59"
+          },
+          {
+            "id": "0:187",
+            "name": "Working Hours",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -2884.0,
+              "y": -1196.0,
+              "width": 90.0,
+              "height": 18.0
+            },
+            "style_ref": "style_1",
+            "text": "Working Hours",
+            "typography_ref": "typo_59"
+          },
+          {
+            "id": "0:188",
+            "name": "0",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -3518.0,
+              "y": -1328.0,
+              "width": 13.0,
+              "height": 29.0
+            },
+            "style_ref": "style_1",
+            "text": "0",
+            "typography_ref": "typo_58"
+          },
+          {
+            "id": "0:189",
+            "name": "12,721",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -3492.0,
+              "y": -1229.0,
+              "width": 94.0,
+              "height": 29.0
+            },
+            "style_ref": "style_1",
+            "text": "12,721",
+            "typography_ref": "typo_60"
+          },
+          {
+            "id": "0:190",
+            "name": "721",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -3268.0,
+              "y": -1229.0,
+              "width": 94.0,
+              "height": 29.0
+            },
+            "style_ref": "style_1",
+            "text": "721",
+            "typography_ref": "typo_60"
+          },
+          {
+            "id": "0:191",
+            "name": "$2,50,254",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -3097.0,
+              "y": -1229.0,
+              "width": 126.0,
+              "height": 29.0
+            },
+            "style_ref": "style_1",
+            "text": "$2,50,254",
+            "typography_ref": "typo_60"
+          },
+          {
+            "id": "0:192",
+            "name": "12,185hr",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -2885.0,
+              "y": -1229.0,
+              "width": 94.0,
+              "height": 29.0
+            },
+            "style_ref": "style_1",
+            "text": "12,185hr",
+            "typography_ref": "typo_60"
+          },
+          {
+            "id": "0:193",
+            "name": "50",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -3525.0,
+              "y": -1410.0,
+              "width": 25.0,
+              "height": 58.0
+            },
+            "style_ref": "style_1",
+            "text": "50\n",
+            "typography_ref": "typo_58"
+          },
+          {
+            "id": "0:194",
+            "name": "25",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -3524.0,
+              "y": -1367.0,
+              "width": 24.0,
+              "height": 29.0
+            },
+            "style_ref": "style_1",
+            "text": "25",
+            "typography_ref": "typo_58"
+          },
+          {
+            "id": "0:195",
+            "name": "75",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -3524.0,
+              "y": -1452.0,
+              "width": 23.0,
+              "height": 29.0
+            },
+            "style_ref": "style_1",
+            "text": "75",
+            "typography_ref": "typo_58"
+          },
+          {
+            "id": "0:196",
+            "name": "100",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -3531.0,
+              "y": -1490.0,
+              "width": 32.0,
+              "height": 29.0
+            },
+            "style_ref": "style_1",
+            "text": "100",
+            "typography_ref": "typo_58"
+          },
+          {
+            "id": "0:197",
+            "name": "Project Overview",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -3532.0,
+              "y": -1554.0,
+              "width": 171.0,
+              "height": 30.0
+            },
+            "style_ref": "style_1",
+            "text": "Project Overview",
+            "typography_ref": "typo_41"
+          },
+          {
+            "id": "0:198",
+            "name": "Jul",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -3136.0,
+              "y": -1311.0,
+              "width": 29.0,
+              "height": 29.0
+            },
+            "style_ref": "style_1",
+            "text": "Jul",
+            "typography_ref": "typo_58"
+          },
+          {
+            "id": "0:199",
+            "name": "Mar",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -3359.0,
+              "y": -1311.0,
+              "width": 38.0,
+              "height": 29.0
+            },
+            "style_ref": "style_1",
+            "text": "Mar",
+            "typography_ref": "typo_58"
+          },
+          {
+            "id": "0:200",
+            "name": "Sep",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -3022.0,
+              "y": -1311.0,
+              "width": 37.0,
+              "height": 29.0
+            },
+            "style_ref": "style_1",
+            "text": "Sep",
+            "typography_ref": "typo_58"
+          },
+          {
+            "id": "0:201",
+            "name": "May",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -3248.0,
+              "y": -1312.0,
+              "width": 42.0,
+              "height": 29.0
+            },
+            "style_ref": "style_1",
+            "text": "May",
+            "typography_ref": "typo_58"
+          },
+          {
+            "id": "0:202",
+            "name": "feb",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -3414.0,
+              "y": -1311.0,
+              "width": 32.0,
+              "height": 29.0
+            },
+            "style_ref": "style_1",
+            "text": "feb",
+            "typography_ref": "typo_58"
+          },
+          {
+            "id": "0:203",
+            "name": "Nov",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -2911.0,
+              "y": -1312.0,
+              "width": 38.0,
+              "height": 29.0
+            },
+            "style_ref": "style_1",
+            "text": "Nov",
+            "typography_ref": "typo_58"
+          },
+          {
+            "id": "0:204",
+            "name": "Week",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -3132.0,
+              "y": -1542.0,
+              "width": 49.0,
+              "height": 26.0
+            },
+            "style_ref": "style_1",
+            "text": "Week",
+            "typography_ref": "typo_42"
+          },
+          {
+            "id": "0:205",
+            "name": "Month",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -3040.0,
+              "y": -1540.0,
+              "width": 56.0,
+              "height": 26.0
+            },
+            "style_ref": "style_1",
+            "text": "Month",
+            "typography_ref": "typo_42"
+          },
+          {
+            "id": "0:206",
+            "name": "Year",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -2935.0,
+              "y": -1542.0,
+              "width": 40.0,
+              "height": 26.0
+            },
+            "style_ref": "style_1",
+            "text": "Year",
+            "typography_ref": "typo_42"
+          },
+          {
+            "id": "0:207",
+            "name": "All",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -2829.0,
+              "y": -1540.0,
+              "width": 22.0,
+              "height": 26.0
+            },
+            "style_ref": "style_1",
+            "text": "All",
+            "typography_ref": "typo_42"
+          },
+          {
+            "id": "0:208",
+            "name": "Aug",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -3077.0,
+              "y": -1311.0,
+              "width": 40.0,
+              "height": 29.0
+            },
+            "style_ref": "style_1",
+            "text": "Aug",
+            "typography_ref": "typo_58"
+          },
+          {
+            "id": "0:209",
+            "name": "Apr",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -3303.0,
+              "y": -1311.0,
+              "width": 35.0,
+              "height": 29.0
+            },
+            "style_ref": "style_1",
+            "text": "Apr",
+            "typography_ref": "typo_58"
+          },
+          {
+            "id": "0:210",
+            "name": "Oct",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -2966.0,
+              "y": -1311.0,
+              "width": 34.0,
+              "height": 29.0
+            },
+            "style_ref": "style_1",
+            "text": "Oct",
+            "typography_ref": "typo_58"
+          },
+          {
+            "id": "0:211",
+            "name": "Jun",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -3190.0,
+              "y": -1311.0,
+              "width": 36.0,
+              "height": 29.0
+            },
+            "style_ref": "style_1",
+            "text": "Jun",
+            "typography_ref": "typo_58"
+          },
+          {
+            "id": "0:212",
+            "name": "Dec",
+            "type": "text",
+            "figma_type": "TEXT",
+            "dimensions": {
+              "x": -2853.0,
+              "y": -1311.0,
+              "width": 37.0,
+              "height": 29.0
+            },
+            "style_ref": "style_1",
+            "text": "Dec",
+            "typography_ref": "typo_58"
+          },
+          {
+            "id": "0:213",
+            "name": "Line 10",
+            "type": "line",
+            "figma_type": "LINE",
+            "dimensions": {
+              "x": -3446.0,
+              "y": -1417.9999992221428,
+              "width": 42.00000090550384,
+              "height": 43.99999922214283
+            },
+            "style_ref": "style_47"
+          },
+          {
+            "id": "0:214",
+            "name": "Line 11",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/2d025a2d-3c37-47c4-a708-8da393e4681b",
+            "dimensions": {
+              "x": -3387.5000984877292,
+              "y": -1420.130859375,
+              "width": 40.00028471764335,
+              "height": 46.760274734434006
+            },
+            "style_ref": "style_47",
+            "imagePath": "/assets/figmaimages/figma_image_0_214.svg"
+          },
+          {
+            "id": "0:215",
+            "name": "Line 12",
+            "type": "line",
+            "figma_type": "LINE",
+            "dimensions": {
+              "x": -3331.0,
+              "y": -1374.0,
+              "width": 38.999998575107384,
+              "height": 35.99999965811185
+            },
+            "style_ref": "style_47"
+          },
+          {
+            "id": "0:216",
+            "name": "Line 13",
+            "type": "line",
+            "figma_type": "LINE",
+            "dimensions": {
+              "x": -3276.0,
+              "y": -1395.0000008735674,
+              "width": 38.0000011424022,
+              "height": 58.00000087356739
+            },
+            "style_ref": "style_47"
+          },
+          {
+            "id": "0:217",
+            "name": "Line 14",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/d35e5aa7-9e2a-4f2a-8a3c-5039e650d848",
+            "dimensions": {
+              "x": -3222.320068359375,
+              "y": -1439.3847666639413,
+              "width": 43.38963117780668,
+              "height": 36.66755846865226
+            },
+            "style_ref": "style_47",
+            "imagePath": "/assets/figmaimages/figma_image_0_217.svg"
+          },
+          {
+            "id": "0:218",
+            "name": "Line 15",
+            "type": "line",
+            "figma_type": "LINE",
+            "dimensions": {
+              "x": -3164.0,
+              "y": -1439.0,
+              "width": 38.0000012719529,
+              "height": 80.00000212211489
+            },
+            "style_ref": "style_47"
+          },
+          {
+            "id": "0:219",
+            "name": "Line 16",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -3110.38330078125,
+              "y": -1447.2036178762228,
+              "width": 42.581717429658966,
+              "height": 91.26712514450878
+            },
+            "style_ref": "style_47"
+          },
+          {
+            "id": "0:220",
+            "name": "Line 17",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -3054.0,
+              "y": -1451.5,
+              "width": 4.0,
+              "height": 0.0
+            },
+            "style_ref": "style_47"
+          },
+          {
+            "id": "0:221",
+            "name": "Line 18",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/ab201e79-586d-4cf6-866b-c0b00ac0583c",
+            "dimensions": {
+              "x": -3050.3834215939105,
+              "y": -1451.5,
+              "width": 40.651242891382026,
+              "height": 48.500000393687515
+            },
+            "style_ref": "style_47",
+            "imagePath": "/assets/figmaimages/figma_image_0_221.svg"
+          },
+          {
+            "id": "0:222",
+            "name": "Line 19",
+            "type": "line",
+            "figma_type": "LINE",
+            "dimensions": {
+              "x": -2994.0,
+              "y": -1394.0,
+              "width": 39.0000016425447,
+              "height": 35.00000019267554
+            },
+            "style_ref": "style_47"
+          },
+          {
+            "id": "0:223",
+            "name": "Line 20",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/8aa42e36-521a-4eb3-83dd-a2e6e76b8e95",
+            "dimensions": {
+              "x": -2938.5,
+              "y": -1419.2149106691763,
+              "width": 33.49999970238241,
+              "height": 58.42982188228734
+            },
+            "style_ref": "style_47",
+            "imagePath": "/assets/figmaimages/figma_image_0_223.svg"
+          },
+          {
+            "id": "0:224",
+            "name": "Line 21",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -2905.0,
+              "y": -1419.5,
+              "width": 4.0,
+              "height": 0.0
+            },
+            "style_ref": "style_47"
+          },
+          {
+            "id": "0:225",
+            "name": "Line 22",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/74020027-e12e-4613-9a7a-e6d82ab0502b",
+            "dimensions": {
+              "x": -2885.2041015625,
+              "y": -1439.3735152902373,
+              "width": 38.67905441992707,
+              "height": 18.851659938015928
+            },
+            "style_ref": "style_47",
+            "imagePath": "/assets/figmaimages/figma_image_0_225.svg"
+          },
+          {
+            "id": "0:226",
+            "name": "Rectangle 52",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "dimensions": {
+              "x": -3573.0,
+              "y": -1248.0,
+              "width": 828.0,
+              "height": 92.0
+            },
+            "style_ref": "style_48"
+          },
+          {
+            "id": "0:227",
+            "name": "Line 23",
+            "type": "line",
+            "figma_type": "LINE",
+            "dimensions": {
+              "x": -3360.999999959102,
+              "y": -1247.0,
+              "width": 0.9999999591018423,
+              "height": 89.9999963191658
+            },
+            "style_ref": "style_49"
+          },
+          {
+            "id": "0:228",
+            "name": "Line 24",
+            "type": "line",
+            "figma_type": "LINE",
+            "dimensions": {
+              "x": -3144.999999959102,
+              "y": -1248.0,
+              "width": 0.9999999591018423,
+              "height": 89.9999963191658
+            },
+            "style_ref": "style_49"
+          },
+          {
+            "id": "0:229",
+            "name": "Line 25",
+            "type": "line",
+            "figma_type": "LINE",
+            "dimensions": {
+              "x": -2949.999999959102,
+              "y": -1247.0,
+              "width": 0.9999999591018423,
+              "height": 89.9999963191658
+            },
+            "style_ref": "style_49"
+          }
+        ]
+      },
+      {
+        "id": "0:230",
+        "name": "Rectangle 54",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/2054abb2-6fca-4a2b-859a-9e75ad9e772e",
+        "dimensions": {
+          "x": -2685.0,
+          "y": -1456.0,
+          "width": 20.0,
+          "height": 20.0
+        },
+        "style_ref": "style_116",
+        "imagePath": "/assets/figmaimages/figma_image_0_230.svg"
+      },
+      {
+        "id": "0:231",
+        "name": "Rectangle 57",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -2685.0,
+          "y": -1382.0,
+          "width": 20.0,
+          "height": 20.0
+        },
+        "style_ref": "style_116"
+      },
+      {
+        "id": "0:232",
+        "name": "Rectangle 61",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -2685.0,
+          "y": -1308.0,
+          "width": 20.0,
+          "height": 20.0
+        },
+        "style_ref": "style_116"
+      },
+      {
+        "id": "0:233",
+        "name": "Rectangle 65",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -2685.0,
+          "y": -1234.0,
+          "width": 20.0,
+          "height": 20.0
+        },
+        "style_ref": "style_116"
+      },
+      {
+        "id": "0:234",
+        "name": "Rectangle 55",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/2ed2469c-b6c7-493b-af71-8109bdcebfe4",
+        "dimensions": {
+          "x": -2402.0,
+          "y": -1458.0,
+          "width": 22.0,
+          "height": 22.0
+        },
+        "style_ref": "style_117",
+        "imagePath": "/assets/figmaimages/figma_image_0_234.svg"
+      },
+      {
+        "id": "0:235",
+        "name": "Rectangle 58",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -2402.0,
+          "y": -1384.0,
+          "width": 22.0,
+          "height": 22.0
+        },
+        "style_ref": "style_117"
+      },
+      {
+        "id": "0:236",
+        "name": "Rectangle 62",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -2402.0,
+          "y": -1310.0,
+          "width": 22.0,
+          "height": 22.0
+        },
+        "style_ref": "style_117"
+      },
+      {
+        "id": "0:237",
+        "name": "Rectangle 66",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -2402.0,
+          "y": -1236.0,
+          "width": 22.0,
+          "height": 22.0
+        },
+        "style_ref": "style_117"
+      },
+      {
+        "id": "0:238",
+        "name": "Rectangle 56",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -2364.0,
+          "y": -1458.0,
+          "width": 22.0,
+          "height": 22.0
+        },
+        "style_ref": "style_118"
+      },
+      {
+        "id": "0:239",
+        "name": "Rectangle 59",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -2364.0,
+          "y": -1384.0,
+          "width": 22.0,
+          "height": 22.0
+        },
+        "style_ref": "style_118"
+      },
+      {
+        "id": "0:240",
+        "name": "Rectangle 63",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -2364.0,
+          "y": -1310.0,
+          "width": 22.0,
+          "height": 22.0
+        },
+        "style_ref": "style_118"
+      },
+      {
+        "id": "0:241",
+        "name": "Rectangle 67",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -2364.0,
+          "y": -1236.0,
+          "width": 22.0,
+          "height": 22.0
+        },
+        "style_ref": "style_118"
+      },
+      {
+        "id": "0:242",
+        "name": "Rectangle 53",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/6a4b11ac-7beb-4047-b141-63357beb806b",
+        "dimensions": {
+          "x": -2683.0,
+          "y": -1454.0,
+          "width": 16.0,
+          "height": 16.0
+        },
+        "style_ref": "style_119",
+        "imagePath": "/assets/figmaimages/figma_image_0_242.svg"
+      },
+      {
+        "id": "0:243",
+        "name": "Rectangle 60",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -2683.0,
+          "y": -1380.0,
+          "width": 16.0,
+          "height": 16.0
+        },
+        "style_ref": "style_119"
+      },
+      {
+        "id": "0:244",
+        "name": "Rectangle 64",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -2683.0,
+          "y": -1306.0,
+          "width": 16.0,
+          "height": 16.0
+        },
+        "style_ref": "style_119"
+      },
+      {
+        "id": "0:245",
+        "name": "Rectangle 68",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -2683.0,
+          "y": -1232.0,
+          "width": 16.0,
+          "height": 16.0
+        },
+        "style_ref": "style_119"
+      },
+      {
+        "id": "0:246",
+        "name": "ph:export-fill",
+        "type": "container",
+        "figma_type": "FRAME",
+        "dimensions": {
+          "x": -2741.0,
+          "y": -1078.0,
+          "width": 62.0,
+          "height": 62.0
+        },
+        "style_ref": "style_1",
+        "children": [
+          {
+            "id": "0:247",
+            "name": "Vector",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/3bc8ea45-c70b-42e8-9a51-e40bb0f6921d",
+            "dimensions": {
+              "x": -2731.3125,
+              "y": -1074.12646484375,
+              "width": 42.625,
+              "height": 50.376522064208984
+            },
+            "style_ref": "style_34",
+            "imagePath": "/assets/figmaimages/figma_image_0_247.svg"
+          }
+        ]
+      },
+      {
+        "id": "0:248",
+        "name": "Rectangle 70",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -3572.0,
+          "y": -885.0,
+          "width": 1253.0,
+          "height": 114.0
+        },
+        "style_ref": "style_54"
+      },
+      {
+        "id": "0:249",
+        "name": "Rectangle 71",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -3572.0,
+          "y": -780.0,
+          "width": 1253.0,
+          "height": 114.0
+        },
+        "style_ref": "style_54"
+      },
+      {
+        "id": "0:250",
+        "name": "Rectangle 72",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -3572.0,
+          "y": -675.0,
+          "width": 1253.0,
+          "height": 114.0
+        },
+        "style_ref": "style_54"
+      },
+      {
+        "id": "0:251",
+        "name": "Rectangle 73",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -3572.0,
+          "y": -570.0,
+          "width": 1253.0,
+          "height": 131.0
+        },
+        "style_ref": "style_54"
+      },
+      {
+        "id": "0:252",
+        "name": "Rectangle 74",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -3038.0,
+          "y": -836.0,
+          "width": 163.0,
+          "height": 17.0
+        },
+        "style_ref": "style_55"
+      },
+      {
+        "id": "0:253",
+        "name": "Rectangle 76",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -3038.0,
+          "y": -836.0,
+          "width": 163.0,
+          "height": 17.0
+        },
+        "style_ref": "style_55"
+      },
+      {
+        "id": "0:254",
+        "name": "Rectangle 83",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -2760.0,
+          "y": -850.0,
+          "width": 163.0,
+          "height": 46.0
+        },
+        "style_ref": "style_55"
+      },
+      {
+        "id": "0:255",
+        "name": "Rectangle 84",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -2760.0,
+          "y": -738.0,
+          "width": 163.0,
+          "height": 46.0
+        },
+        "style_ref": "style_56"
+      },
+      {
+        "id": "0:256",
+        "name": "Rectangle 85",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -2760.0,
+          "y": -642.0,
+          "width": 163.0,
+          "height": 46.0
+        },
+        "style_ref": "style_57"
+      },
+      {
+        "id": "0:257",
+        "name": "Rectangle 86",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -2760.0,
+          "y": -524.0,
+          "width": 163.0,
+          "height": 46.0
+        },
+        "style_ref": "style_55"
+      },
+      {
+        "id": "0:258",
+        "name": "Rectangle 77",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -3038.0,
+          "y": -723.0,
+          "width": 163.0,
+          "height": 17.0
+        },
+        "style_ref": "style_55"
+      },
+      {
+        "id": "0:259",
+        "name": "Rectangle 79",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -3038.0,
+          "y": -627.0,
+          "width": 163.0,
+          "height": 17.0
+        },
+        "style_ref": "style_55"
+      },
+      {
+        "id": "0:260",
+        "name": "Rectangle 81",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -3038.0,
+          "y": -509.0,
+          "width": 163.0,
+          "height": 17.0
+        },
+        "style_ref": "style_55"
+      },
+      {
+        "id": "0:261",
+        "name": "Rectangle 75",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -3038.0,
+          "y": -836.0,
+          "width": 100.0,
+          "height": 17.0
+        },
+        "style_ref": "style_58"
+      },
+      {
+        "id": "0:262",
+        "name": "Rectangle 78",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/2d36fa83-0f82-45c9-882d-bb7136e84ad6",
+        "dimensions": {
+          "x": -3038.0,
+          "y": -723.0,
+          "width": 44.0,
+          "height": 17.0
+        },
+        "style_ref": "style_59",
+        "imagePath": "/assets/figmaimages/figma_image_0_262.svg"
+      },
+      {
+        "id": "0:263",
+        "name": "Rectangle 80",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -3038.0,
+          "y": -627.0,
+          "width": 137.0,
+          "height": 17.0
+        },
+        "style_ref": "style_57"
+      },
+      {
+        "id": "0:264",
+        "name": "Rectangle 82",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -3038.0,
+          "y": -509.0,
+          "width": 88.0,
+          "height": 17.0
+        },
+        "style_ref": "style_58"
+      },
+      {
+        "id": "0:265",
+        "name": "Inprogress",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2733.0,
+          "y": -844.0,
+          "width": 109.0,
+          "height": 30.0
+        },
+        "style_ref": "style_34",
+        "text": "Inprogress",
+        "typography_ref": "typo_61"
+      },
+      {
+        "id": "0:266",
+        "name": "Pending",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2721.0,
+          "y": -730.0,
+          "width": 84.0,
+          "height": 30.0
+        },
+        "style_ref": "style_60",
+        "text": "Pending",
+        "typography_ref": "typo_62"
+      },
+      {
+        "id": "0:267",
+        "name": "Completed",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2736.0,
+          "y": -633.0,
+          "width": 115.0,
+          "height": 30.0
+        },
+        "style_ref": "style_22",
+        "text": "Completed",
+        "typography_ref": "typo_63"
+      },
+      {
+        "id": "0:268",
+        "name": "Inprogress",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2736.0,
+          "y": -517.0,
+          "width": 109.0,
+          "height": 30.0
+        },
+        "style_ref": "style_34",
+        "text": "Inprogress",
+        "typography_ref": "typo_61"
+      },
+      {
+        "id": "0:269",
+        "name": "Rectangle 87",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -2268.0,
+          "y": -1562.0,
+          "width": 777.0,
+          "height": 743.0
+        },
+        "style_ref": "style_18"
+      },
+      {
+        "id": "0:270",
+        "name": "Events",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2218.0,
+          "y": -1532.0,
+          "width": 151.0,
+          "height": 68.0
+        },
+        "style_ref": "style_1",
+        "text": "Events",
+        "typography_ref": "typo_64"
+      },
+      {
+        "id": "0:271",
+        "name": "Rectangle 88",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -2203.0,
+          "y": -1429.0,
+          "width": 96.0,
+          "height": 96.0
+        }
+      },
+      {
+        "id": "0:272",
+        "name": "Rectangle 89",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -2203.0,
+          "y": -1271.0,
+          "width": 96.0,
+          "height": 96.0
+        }
+      },
+      {
+        "id": "0:273",
+        "name": "Rectangle 90",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -2203.0,
+          "y": -1119.0,
+          "width": 96.0,
+          "height": 96.0
+        }
+      },
+      {
+        "id": "0:274",
+        "name": "Rectangle 91",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -2203.0,
+          "y": -963.0,
+          "width": 96.0,
+          "height": 96.0
+        }
+      },
+      {
+        "id": "0:275",
+        "name": "20 Mon",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2188.0,
+          "y": -1420.0,
+          "width": 66.0,
+          "height": 90.0
+        },
+        "style_ref": "style_1",
+        "text": "20\nMon",
+        "typography_ref": "typo_65"
+      },
+      {
+        "id": "0:276",
+        "name": "Development planning",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2088.0,
+          "y": -1420.0,
+          "width": 383.0,
+          "height": 45.0
+        },
+        "style_ref": "style_1",
+        "text": "Development planning",
+        "typography_ref": "typo_65"
+      },
+      {
+        "id": "0:277",
+        "name": "12.02 PM",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -1671.0,
+          "y": -1396.0,
+          "width": 174.0,
+          "height": 45.0
+        },
+        "style_ref": "style_1",
+        "text": "12.02 PM",
+        "typography_ref": "typo_65"
+      },
+      {
+        "id": "0:278",
+        "name": "12.02 PM",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -1671.0,
+          "y": -1245.0,
+          "width": 174.0,
+          "height": 45.0
+        },
+        "style_ref": "style_1",
+        "text": "12.02 PM",
+        "typography_ref": "typo_65"
+      },
+      {
+        "id": "0:279",
+        "name": "12.02 PM",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -1671.0,
+          "y": -1094.0,
+          "width": 174.0,
+          "height": 45.0
+        },
+        "style_ref": "style_1",
+        "text": "12.02 PM",
+        "typography_ref": "typo_65"
+      },
+      {
+        "id": "0:280",
+        "name": "12.02 PM",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -1671.0,
+          "y": -943.0,
+          "width": 174.0,
+          "height": 45.0
+        },
+        "style_ref": "style_1",
+        "text": "12.02 PM",
+        "typography_ref": "typo_65"
+      },
+      {
+        "id": "0:281",
+        "name": "Development planning",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2088.0,
+          "y": -1267.0,
+          "width": 383.0,
+          "height": 45.0
+        },
+        "style_ref": "style_1",
+        "text": "Development planning",
+        "typography_ref": "typo_65"
+      },
+      {
+        "id": "0:282",
+        "name": "Development planning",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2088.0,
+          "y": -1114.0,
+          "width": 383.0,
+          "height": 45.0
+        },
+        "style_ref": "style_1",
+        "text": "Development planning",
+        "typography_ref": "typo_65"
+      },
+      {
+        "id": "0:283",
+        "name": "Development planning",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2088.0,
+          "y": -961.0,
+          "width": 383.0,
+          "height": 45.0
+        },
+        "style_ref": "style_1",
+        "text": "Development planning",
+        "typography_ref": "typo_65"
+      },
+      {
+        "id": "0:284",
+        "name": "W3 Technologies",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2087.0,
+          "y": -1377.0,
+          "width": 291.0,
+          "height": 45.0
+        },
+        "style_ref": "style_1",
+        "text": "W3 Technologies",
+        "typography_ref": "typo_65"
+      },
+      {
+        "id": "0:285",
+        "name": "W3 Technologies",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2087.0,
+          "y": -1224.0,
+          "width": 291.0,
+          "height": 45.0
+        },
+        "style_ref": "style_1",
+        "text": "W3 Technologies",
+        "typography_ref": "typo_65"
+      },
+      {
+        "id": "0:286",
+        "name": "W3 Technologies",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2087.0,
+          "y": -1071.0,
+          "width": 291.0,
+          "height": 45.0
+        },
+        "style_ref": "style_1",
+        "text": "W3 Technologies",
+        "typography_ref": "typo_65"
+      },
+      {
+        "id": "0:287",
+        "name": "W3 Technologies",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2087.0,
+          "y": -918.0,
+          "width": 291.0,
+          "height": 45.0
+        },
+        "style_ref": "style_1",
+        "text": "W3 Technologies",
+        "typography_ref": "typo_65"
+      },
+      {
+        "id": "0:288",
+        "name": "21 Mon",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2188.0,
+          "y": -1267.0,
+          "width": 66.0,
+          "height": 90.0
+        },
+        "style_ref": "style_1",
+        "text": "21\nMon",
+        "typography_ref": "typo_65"
+      },
+      {
+        "id": "0:289",
+        "name": "24 Mon",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2188.0,
+          "y": -1114.0,
+          "width": 66.0,
+          "height": 90.0
+        },
+        "style_ref": "style_1",
+        "text": "24\nMon",
+        "typography_ref": "typo_65"
+      },
+      {
+        "id": "0:290",
+        "name": "25 Mon",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2188.0,
+          "y": -961.0,
+          "width": 66.0,
+          "height": 90.0
+        },
+        "style_ref": "style_1",
+        "text": "25\nMon",
+        "typography_ref": "typo_65"
+      },
+      {
+        "id": "0:291",
+        "name": "Rectangle 92",
+        "type": "rectangle",
+        "figma_type": "RECTANGLE",
+        "dimensions": {
+          "x": -2266.0,
+          "y": -775.0,
+          "width": 769.0,
+          "height": 336.0
+        },
+        "style_ref": "style_18"
+      },
+      {
+        "id": "0:292",
+        "name": "Ellipse 31",
+        "type": "ellipse",
+        "figma_type": "ELLIPSE",
+        "dimensions": {
+          "x": -2228.0,
+          "y": -718.0,
+          "width": 221.0,
+          "height": 221.0
+        },
+        "style_ref": "style_61"
+      },
+      {
+        "id": "0:293",
+        "name": "Ellipse 32",
+        "type": "ellipse",
+        "figma_type": "ELLIPSE",
+        "dimensions": {
+          "x": -2228.0,
+          "y": -718.0,
+          "width": 221.0,
+          "height": 221.0
+        },
+        "style_ref": "style_62"
+      },
+      {
+        "id": "0:294",
+        "name": "Ellipse 33",
+        "type": "ellipse",
+        "figma_type": "ELLIPSE",
+        "dimensions": {
+          "x": -2228.0,
+          "y": -718.0,
+          "width": 221.0,
+          "height": 221.0
+        },
+        "style_ref": "style_62"
+      },
+      {
+        "id": "0:295",
+        "name": "Ellipse 34",
+        "type": "ellipse",
+        "figma_type": "ELLIPSE",
+        "dimensions": {
+          "x": -2228.0,
+          "y": -718.0,
+          "width": 221.0,
+          "height": 221.0
+        },
+        "style_ref": "style_63"
+      },
+      {
+        "id": "0:296",
+        "name": "62 Complete",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -2188.0,
+          "y": -654.0,
+          "width": 141.0,
+          "height": 92.0
+        },
+        "style_ref": "style_1",
+        "text": "62\nComplete",
+        "typography_ref": "typo_65"
+      },
+      {
+        "id": "0:297",
+        "name": "All Projects",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -1968.0,
+          "y": -719.0,
+          "width": 196.0,
+          "height": 53.0
+        },
+        "style_ref": "style_1",
+        "text": "All Projects",
+        "typography_ref": "typo_66"
+      },
+      {
+        "id": "0:298",
+        "name": "Complete",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -1871.0,
+          "y": -661.0,
+          "width": 167.0,
+          "height": 50.0
+        },
+        "style_ref": "style_1",
+        "text": "Complete",
+        "typography_ref": "typo_67"
+      },
+      {
+        "id": "0:299",
+        "name": "Pending",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -1866.0,
+          "y": -605.0,
+          "width": 138.0,
+          "height": 50.0
+        },
+        "style_ref": "style_1",
+        "text": "Pending",
+        "typography_ref": "typo_67"
+      },
+      {
+        "id": "0:300",
+        "name": "Not Start",
+        "type": "text",
+        "figma_type": "TEXT",
+        "dimensions": {
+          "x": -1866.0,
+          "y": -549.0,
+          "width": 148.0,
+          "height": 50.0
+        },
+        "style_ref": "style_1",
+        "text": "Not Start",
+        "typography_ref": "typo_67"
+      },
+      {
+        "id": "0:301",
+        "name": "Vector 13",
+        "type": "icon",
+        "figma_type": "VECTOR",
+        "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/f87fd2a5-5647-4ec5-b1b2-6887d43ea534",
+        "dimensions": {
+          "x": -3627.0,
+          "y": -2269.0,
+          "width": 16.5,
+          "height": 23.0
+        },
+        "style_ref": "style_64",
+        "imagePath": "/assets/figmaimages/figma_image_0_301.svg"
+      },
+      {
+        "id": "0:302",
+        "name": "Vector 14",
+        "type": "icon",
+        "figma_type": "VECTOR",
+        "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/d04ee713-171a-4296-806a-55ea280f6d97",
+        "dimensions": {
+          "x": -3684.0,
+          "y": -2127.0,
+          "width": 17.0,
+          "height": 10.0
+        },
+        "style_ref": "style_65",
+        "imagePath": "/assets/figmaimages/figma_image_0_302.svg"
+      },
+      {
+        "id": "0:303",
+        "name": "ic:round-home",
+        "type": "container",
+        "figma_type": "FRAME",
+        "dimensions": {
+          "x": -3880.0,
+          "y": -2138.0,
+          "width": 30.0,
+          "height": 30.0
+        },
+        "style_ref": "style_1",
+        "children": [
+          {
+            "id": "0:304",
+            "name": "Vector",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/93a4dc89-916e-478c-a0ae-ff548617ad8a",
+            "dimensions": {
+              "x": -3876.497314453125,
+              "y": -2133.81884765625,
+              "width": 23.000185012817383,
+              "height": 20.818750381469727
+            },
+            "style_ref": "style_21",
+            "imagePath": "/assets/figmaimages/figma_image_0_304.svg"
+          }
+        ]
+      },
+      {
+        "id": "0:305",
+        "name": "Line 26",
+        "type": "line",
+        "figma_type": "LINE",
+        "dimensions": {
+          "x": -3876.0,
+          "y": -2059.0,
+          "width": 12.0,
+          "height": 0.0
+        },
+        "style_ref": "style_66"
+      },
+      {
+        "id": "0:306",
+        "name": "Line 27",
+        "type": "line",
+        "figma_type": "LINE",
+        "dimensions": {
+          "x": -3876.0,
+          "y": -1996.0,
+          "width": 12.0,
+          "height": 0.0
+        },
+        "style_ref": "style_66"
+      },
+      {
+        "id": "0:307",
+        "name": "Line 28",
+        "type": "line",
+        "figma_type": "LINE",
+        "dimensions": {
+          "x": -3876.0,
+          "y": -1933.0,
+          "width": 12.0,
+          "height": 0.0
+        },
+        "style_ref": "style_66"
+      },
+      {
+        "id": "0:308",
+        "name": "Line 29",
+        "type": "line",
+        "figma_type": "LINE",
+        "dimensions": {
+          "x": -3876.0,
+          "y": -1870.0,
+          "width": 12.0,
+          "height": 0.0
+        },
+        "style_ref": "style_66"
+      },
+      {
+        "id": "0:309",
+        "name": "Line 30",
+        "type": "line",
+        "figma_type": "LINE",
+        "dimensions": {
+          "x": -3876.0,
+          "y": -1807.0,
+          "width": 12.0,
+          "height": 0.0
+        },
+        "style_ref": "style_66"
+      },
+      {
+        "id": "0:310",
+        "name": "Line 31",
+        "type": "line",
+        "figma_type": "LINE",
+        "dimensions": {
+          "x": -3871.0,
+          "y": -1725.0,
+          "width": 12.0,
+          "height": 0.0
+        },
+        "style_ref": "style_66"
+      },
+      {
+        "id": "0:311",
+        "name": "Line 32",
+        "type": "line",
+        "figma_type": "LINE",
+        "dimensions": {
+          "x": -3871.0,
+          "y": -1662.0,
+          "width": 12.0,
+          "height": 0.0
+        },
+        "style_ref": "style_66"
+      },
+      {
+        "id": "0:312",
+        "name": "fluent:tasks-app-28-filled",
+        "type": "container",
+        "figma_type": "FRAME",
+        "dimensions": {
+          "x": -3755.0,
+          "y": -1741.0,
+          "width": 28.0,
+          "height": 28.0
+        },
+        "style_ref": "style_1",
+        "children": [
+          {
+            "id": "0:313",
+            "name": "Vector",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/ae93c62c-32bd-4f72-8232-d1b1f6cc226a",
+            "dimensions": {
+              "x": -3751.0,
+              "y": -1739.0,
+              "width": 22.018707275390625,
+              "height": 24.0
+            },
+            "style_ref": "style_2",
+            "imagePath": "/assets/figmaimages/figma_image_0_313.svg"
+          }
+        ]
+      },
+      {
+        "id": "0:314",
+        "name": "carbon:ibm-cloud-projects",
+        "type": "container",
+        "figma_type": "FRAME",
+        "dimensions": {
+          "x": -3733.0,
+          "y": -1678.0,
+          "width": 32.0,
+          "height": 32.0
+        },
+        "style_ref": "style_1",
+        "children": [
+          {
+            "id": "0:315",
+            "name": "Vector",
+            "type": "icon",
+            "figma_type": "VECTOR",
+            "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/09bd999a-cbee-40d1-8ebd-ff8f8d792786",
+            "dimensions": {
+              "x": -3730.0,
+              "y": -1674.0,
+              "width": 27.0,
+              "height": 26.0
+            },
+            "style_ref": "style_2",
+            "imagePath": "/assets/figmaimages/figma_image_0_315.svg"
+          }
+        ]
+      },
+      {
+        "id": "0:316",
+        "name": "Ellipse 35",
+        "type": "ellipse",
+        "figma_type": "ELLIPSE",
+        "imageUrl": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/ba8954ee-0ce6-4157-b2f1-9b98f44e2f97",
+        "dimensions": {
+          "x": -1934.0,
+          "y": -652.0,
+          "width": 37.0,
+          "height": 37.0
+        },
+        "style_ref": "style_67",
+        "imagePath": "/assets/figmaimages/figma_image_0_316.svg"
+      },
+      {
+        "id": "0:317",
+        "name": "Ellipse 36",
+        "type": "ellipse",
+        "figma_type": "ELLIPSE",
+        "dimensions": {
+          "x": -1934.0,
+          "y": -598.0,
+          "width": 37.0,
+          "height": 37.0
+        },
+        "style_ref": "style_68"
+      },
+      {
+        "id": "0:318",
+        "name": "Ellipse 37",
+        "type": "ellipse",
+        "figma_type": "ELLIPSE",
+        "dimensions": {
+          "x": -1934.0,
+          "y": -544.0,
+          "width": 37.0,
+          "height": 37.0
+        },
+        "style_ref": "style_69"
+      }
+    ]
+  },
+  "components_used": [],
+  "interactions": [],
+  "design_system_ref": "design_system_kaviademo4200-6700-99CbwMIHAGoxjh9BylcL9w.json",
+  "created_at": "2025-10-15T19:30:30.103796"
+}

@@ -1,0 +1,59 @@
+<!-- Source screen: Dashboard Dark (Figma id 0:3) -->
+<!--
+  Changelog (refactor):
+  - Added semantic landmarks: header/nav/main/section with appropriate roles and aria labels
+  - Added accessible skip link (focusable) to jump to main content
+  - Wrapped absolute-positioned canvas in a "stage" section and preserved pixel-perfect baseline
+  - Retained original static render but improved a11y and structure for screen readers
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dashboard Dark - 0:3 (static)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="stylesheet" href="./dashboard-dark-0-3.css" />
+  </head>
+  <body>
+    <!-- Skip to main for keyboard users -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- App landmarks (semantic only; visual stage remains inside main/section) -->
+    <header class="app-header" role="banner" aria-label="Application header">
+      <h1 class="visually-hidden">Dashboard Dark (static render)</h1>
+    </header>
+
+    <nav class="app-nav" role="navigation" aria-label="Primary">
+      <!-- Note: Navigation is rendered in-canvas for pixel-fidelity. This landmark exists for assistive tech. -->
+      <span class="visually-hidden">Use Tab to focus the main content. Navigation elements are part of the static canvas.</span>
+    </nav>
+
+    <main id="main" class="app-main" role="main" tabindex="-1" aria-label="Main content">
+      <section class="stage" aria-label="Static canvas stage">
+        <div class="viewport" role="region" aria-label="Viewport">
+          <!-- Responsive scale wrapper -->
+          <div id="canvas-wrapper" class="canvas-wrapper" aria-hidden="true">
+            <!-- Design canvas root (2490 × 1922) -->
+            <div
+              id="canvas"
+              class="dashboard-canvas"
+              role="img"
+              aria-label="Dashboard Dark static render"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="app-footer" role="contentinfo" aria-label="Footer">
+      <span class="visually-hidden">End of static screen</span>
+    </footer>
+
+    <noscript>
+      This static render requires JavaScript to position elements. Please enable JavaScript.
+    </noscript>
+
+    <script defer src="./dashboard-dark-0-3.js"></script>
+  </body>
+</html>

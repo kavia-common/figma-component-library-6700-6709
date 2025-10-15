@@ -1,22 +1,41 @@
 ﻿/* Source screen: Dashboard Dark (Figma id 0:3) */
-/* This script constructs a static, pixel-placed layout using the provided Figma JSON coordinates. */
+/*
+  Changelog:
+  - Optional FIGMA spec parser to verify dimensions and compute offsets
+  - Asset path normalized to /assets/figmaimages/, with lazy loading and width/height to avoid CLS
+  - ResizeObserver + rAF throttle for scaling; devicePixelRatio crispness hints
+  - Keyboard navigation enhancement for sidebar text nodes; focus-visible styles
+  - Graceful image error fallback to avoid broken icons if assets are missing
+*/
 
-/* Root frame from screen_0:3.json */
+/* Public asset base for images served via Storybook staticDirs */
+const ASSET_BASE = '/assets/figmaimages/';
+
+/* FIGMA root (defaults; will be verified from JSON if available) */
 const FIGMA_ROOT = { x: -3889, y: -2313, width: 2490, height: 1922 };
 
-/* We normalize X using an offset so the sidebar aligns to x=0 (child x:-3896 => left 0). */
-const OFFSET_X = 3896; // -(-3896)
-const OFFSET_Y = 2313; // -(-2313)
+/* Offsets (computed to align left edge at x=0 and top at y=0) */
+const offsets = { x: 3896, y: 2313 };
+
+/* Helper to resolve asset path */
+function resolveAsset(src) {
+  if (!src) return '';
+  if (src.startsWith('/assets/')) return src;
+  if (/^https?:\/\//i.test(src)) return src;
+  // Allow passing "figmaimages/foo.svg" or "foo.svg"
+  const clean = src.replace(/^figmaimages\/?/, '');
+  return ASSET_BASE + clean;
+}
 
 /* Helpers to translate Figma absolute coords to canvas-relative coords */
-function fx(x) { return Math.round(x + OFFSET_X); }
-function fy(y) { return Math.round(y + OFFSET_Y); }
+function fx(x) { return Math.round(x + offsets.x); }
+function fy(y) { return Math.round(y + offsets.y); }
 
 /* Small factory helpers */
 function addRect(parent, { id, x, y, w, h, className = '', radius = 16, style = {} }) {
   const el = document.createElement('div');
   el.className = ['node', 'shape', className].filter(Boolean).join(' ');
-  el.id = id;
+  if (id) el.id = id;
   Object.assign(el.style, {
     left: fx(x) + 'px',
     top: fy(y) + 'px',
@@ -27,10 +46,12 @@ function addRect(parent, { id, x, y, w, h, className = '', radius = 16, style = 
   parent.appendChild(el);
   return el;
 }
-function addText(parent, { id, x, y, w, h, text, className = '', style = {} }) {
+function addText(parent, { id, x, y, w, h, text, className = '', style = {}, role, tabindex }) {
   const el = document.createElement('div');
   el.className = ['node', 'pre-line', className].filter(Boolean).join(' ');
-  el.id = id;
+  if (id) el.id = id;
+  if (role) el.setAttribute('role', role);
+  if (tabindex != null) el.tabIndex = tabindex;
   Object.assign(el.style, {
     left: fx(x) + 'px',
     top: fy(y) + 'px',
@@ -44,7 +65,7 @@ function addText(parent, { id, x, y, w, h, text, className = '', style = {} }) {
 function addImage(parent, { id, x, y, w, h, src, className = '', style = {}, alt = '' }) {
   const el = document.createElement('img');
   el.className = ['node', 'img-node', className].filter(Boolean).join(' ');
-  el.id = id;
+  if (id) el.id = id;
   Object.assign(el.style, {
     left: fx(x) + 'px',
     top: fy(y) + 'px',
@@ -52,8 +73,20 @@ function addImage(parent, { id, x, y, w, h, src, className = '', style = {}, alt
     height: Math.round(h) + 'px',
     position: 'absolute'
   }, style);
-  el.src = src;
+  const resolved = resolveAsset(src);
+  el.src = resolved;
   el.alt = alt || id || 'asset';
+  // Avoid CLS: set width/height attributes to match CSS box
+  el.setAttribute('width', Math.round(w));
+  el.setAttribute('height', Math.round(h));
+  el.setAttribute('decoding', 'async');
+  el.setAttribute('loading', 'lazy');
+  // Graceful fallback if asset not found
+  el.addEventListener('error', () => {
+    el.style.display = 'none';
+    // Optional: visualize a placeholder shape if needed
+    // el.style.display = 'block'; el.style.background = 'var(--ocean-surface-muted)';
+  });
   parent.appendChild(el);
   return el;
 }
@@ -66,6 +99,8 @@ function render() {
   // Canvas size from Figma root
   canvas.style.width = FIGMA_ROOT.width + 'px';
   canvas.style.height = FIGMA_ROOT.height + 'px';
+
+  // Global background fill already applied via canvas background
 
   // Sidebar (Rectangle 15, style_3)
   addRect(canvas, {
@@ -83,11 +118,11 @@ function render() {
     radius: 0
   });
 
-  // Home icon in sidebar (placeholder image from figma_image_0_69.png)
+  // Home icon in sidebar (ic:round-home -> figma_image_0_304.svg)
   addImage(canvas, {
     id: 'icon-home',
     x: -3880, y: -2138, w: 30, h: 30,
-    src: '/assets/figmaimages/figma_image_0_69.png',
+    src: 'figma_image_0_304.svg',
     alt: 'home'
   });
 
@@ -100,30 +135,22 @@ function render() {
     style: { color: 'var(--text-primary)' }
   });
 
-  // Sidebar nav items (subset; from 0:34..0:41)
-  addText(canvas, {
-    id: 'nav-dashboard',
-    x: -3846, y: -2141, w: 239, h: 38,
-    text: 'Dashboard',
-    className: 'text-body semibold'
-  });
-  addText(canvas, {
-    id: 'nav-dashboard-light',
-    x: -3846, y: -2078, w: 239, h: 38,
-    text: 'Dashboard Light',
-    className: 'text-body'
-  });
-  addText(canvas, {
-    id: 'nav-dashboard-dark',
-    x: -3846, y: -2015, w: 239, h: 38,
-    text: 'Dashboard Dark',
-    className: 'text-body semibold'
-  });
-  addText(canvas, {
-    id: 'nav-employee',
-    x: -3846, y: -1952, w: 239, h: 38,
-    text: 'Employee Board',
-    className: 'text-body'
+  // Sidebar nav items (subset; from 0:34..0:41) – add keyboard nav affordances
+  const navIds = [
+    { id: 'nav-dashboard',        text: 'Dashboard',        y: -2141, active: true  },
+    { id: 'nav-dashboard-light',  text: 'Dashboard Light',  y: -2078, active: false },
+    { id: 'nav-dashboard-dark',   text: 'Dashboard Dark',   y: -2015, active: true  },
+    { id: 'nav-employee',         text: 'Employee Board',   y: -1952, active: false },
+  ];
+  navIds.forEach((it) => {
+    addText(canvas, {
+      id: it.id,
+      x: -3846, y: it.y, w: 239, h: 38,
+      text: it.text,
+      className: 'text-body' + (it.active ? ' semibold focusable' : ''),
+      role: 'link',
+      tabindex: 0
+    });
   });
 
   // Topbar search inputs (Rectangles 19 and 18)
@@ -183,27 +210,15 @@ function render() {
     });
   });
 
-  // Purple card avatars (using available PNG placeholder)
-  addImage(canvas, {
-    id: 'kpi-revenue-avatar-1',
-    x: -3255, y: -2118, w: 51, h: 49,
-    src: '/assets/figmaimages/figma_image_0_69.png',
-    className: 'round',
-    alt: 'avatar'
-  });
-  addImage(canvas, {
-    id: 'kpi-revenue-avatar-2',
-    x: -3218, y: -2118, w: 51, h: 49,
-    src: '/assets/figmaimages/figma_image_0_69.png',
-    className: 'round',
-    alt: 'avatar'
-  });
-  addImage(canvas, {
-    id: 'kpi-revenue-avatar-3',
-    x: -3184, y: -2118, w: 50, h: 49,
-    src: '/assets/figmaimages/figma_image_0_69.png',
-    className: 'round',
-    alt: 'avatar'
+  // Purple card avatars (Ellipse 19..21 + 25+ label)
+  ['kpi-revenue-avatar-1','kpi-revenue-avatar-2','kpi-revenue-avatar-3'].forEach((id, idx) => {
+    addImage(canvas, {
+      id,
+      x: [-3255,-3218,-3184][idx], y: -2118, w: [51,51,50][idx], h: 49,
+      src: 'figma_image_0_69.png', // sample asset available
+      className: 'round',
+      alt: 'avatar'
+    });
   });
   addText(canvas, {
     id: 'kpi-revenue-avatar-extra',
@@ -311,11 +326,11 @@ function render() {
     className: 'text-title bold',
     style: { color: '#fff' }
   });
-  // Check icon inside circle (placeholder)
+  // Check icon inside circle (Vector 0:139)
   addImage(canvas, {
     id: 'my-progress-check',
     x: -1753, y: -1989, w: 48, h: 48,
-    src: '/assets/figmaimages/figma_image_0_69.png',
+    src: 'figma_image_0_139.svg',
     alt: 'check'
   });
 
@@ -364,11 +379,11 @@ function render() {
     text: 'Active Projects',
     className: 'text-h1 bold'
   });
-  // Export action (placeholder image)
+  // Export icon + label (0:246..0:247, 0:131)
   addImage(canvas, {
     id: 'export-icon',
     x: -2741, y: -1078, w: 62, h: 62,
-    src: '/assets/figmaimages/figma_image_0_69.png',
+    src: 'figma_image_0_247.svg',
     alt: 'export'
   });
   addText(canvas, {
@@ -436,22 +451,42 @@ function render() {
   addText(canvas, { id: 'r4-status-label', x: -2736, y: -517, w: 109, h: 30, text: 'Inprogress', className: 'text-body semibold' });
   addText(canvas, { id: 'r4-due',     x: -2538, y: -521, w: 198, h: 38, text: '11  Jan 2024', className: 'text-body' });
 
-  // Right column panels (Events and All Projects) - shell rectangles only for brevity
+  // Right column panels (Events and All Projects) - shells
   addRect(canvas, { id: 'events-panel', x: -2268, y: -1562, w: 777, h: 743, className: 'panel' });
   addText(canvas, { id: 'events-title', x: -2218, y: -1532, w: 151, h: 68, text: 'Events', className: 'text-h1 bold' });
 
   addRect(canvas, { id: 'all-projects-panel', x: -2266, y: -775, w: 769, h: 336, className: 'panel' });
   addText(canvas, { id: 'all-projects-title', x: -1968, y: -719, w: 196, h: 53, text: 'All Projects', className: 'text-h2 semibold' });
-  // Simple donut proxy at (ellipse 31..34)
   addRect(canvas, { id: 'all-projects-donut-bg', x: -2228, y: -718, w: 221, h: 221, className: '', radius: 999, style: { background: 'transparent', border: '18px solid var(--ocean-surface-muted)' } });
   addText(canvas, { id: 'all-projects-center', x: -2188, y: -654, w: 141, h: 92, text: '62\nComplete', className: 'text-h2 bold center' });
 
-  // Small decorative/auxiliary icon (placeholder)
+  // Dollar icon
   addImage(canvas, {
     id: 'dollar-icon',
     x: -2660, y: -1748, w: 41, h: 41,
-    src: '/assets/figmaimages/figma_image_0_69.png',
+    src: 'figma_image_0_100.svg',
     alt: 'dollar'
+  });
+
+  // After DOM nodes created, enhance keyboard navigation for sidebar items
+  enhanceSidebarKeyboard(navIds.map((n) => n.id));
+}
+
+function enhanceSidebarKeyboard(ids) {
+  const nodes = ids.map((id) => document.getElementById(id)).filter(Boolean);
+  nodes.forEach((el, idx) => {
+    el.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        (nodes[idx + 1] || nodes[0]).focus();
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        (nodes[idx - 1] || nodes[nodes.length - 1]).focus();
+      } else if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        // noop: static
+      }
+    });
   });
 }
 
@@ -460,14 +495,70 @@ function applyScale() {
   const wrapper = document.getElementById('canvas-wrapper');
   if (!wrapper) return;
   const canvasWidth = FIGMA_ROOT.width;
-  const viewportWidth = Math.max(320, window.innerWidth - 32);
+  // Use clientWidth of viewport container for accuracy inside iframes
+  const viewport = wrapper.parentElement?.closest('.viewport') || document.documentElement;
+  const vw = (viewport === document.documentElement) ? window.innerWidth : viewport.clientWidth;
+  const viewportWidth = Math.max(320, vw - 32);
   const scale = Math.min(1, viewportWidth / canvasWidth);
-  wrapper.style.transform = `scale(${scale})`;
+  wrapper.style.transform = `translateZ(0) scale(${scale})`;
+}
+
+/* Throttle helper using rAF */
+function throttleRaf(fn) {
+  let ticking = false;
+  return function(...args) {
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(() => {
+        fn.apply(this, args);
+        ticking = false;
+      });
+    }
+  };
+}
+
+/* Optionally load the FIGMA spec JSON to compute offsets and verify dimensions */
+async function verifyAndComputeOffsets() {
+  try {
+    const res = await fetch('/static/screen_0-3.json', { cache: 'no-store' });
+    if (!res.ok) return;
+    const data = await res.json();
+    const root = data?.root?.dimensions;
+    if (root && typeof root.x === 'number' && typeof root.y === 'number') {
+      // sidebar x is -3896 in JSON; align it to 0 for left edge
+      // Compute minX as either Rectangle 15 (sidebar) or root.x, then invert sign
+      const minX = Math.min(root.x, -3896);
+      offsets.x = -minX;
+      offsets.y = -root.y; // typically -(-2313) = 2313
+      // console.debug('[figma] computed offsets', offsets);
+    }
+    // Optional basic sanity check for width/height
+    if (data?.dimensions?.width && data?.dimensions?.height) {
+      FIGMA_ROOT.width = Math.round(data.dimensions.width);
+      FIGMA_ROOT.height = Math.round(data.dimensions.height);
+    }
+  } catch (e) {
+    // Silent: spec file may not be present; proceed with defaults
+  }
 }
 
 /* Init */
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', async () => {
+  await verifyAndComputeOffsets();
   render();
   applyScale();
+
+  // Observe viewport size changes for auto-scale
+  const viewport = document.querySelector('.viewport') || document.body;
+  const ro = new ResizeObserver(throttleRaf(applyScale));
+  ro.observe(viewport);
+
+  // Window resize as fallback
+  window.addEventListener('resize', throttleRaf(applyScale));
+
+  // Manage focus when navigating via skip link
+  const main = document.getElementById('main');
+  if (window.location.hash === '#main' && main) {
+    main.focus();
+  }
 });
-window.addEventListener('resize', applyScale);
